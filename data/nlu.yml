@@ -30,12 +30,12 @@ nlu:
       - bye bye
       - see you later 
 
-  - intent: bot_challenge
-    examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
+  #- intent: bot_challenge
+   # examples: |
+    #  - are you a bot?
+     # - are you a human?
+      #- am I talking to a bot?
+      #- am I talking to a human?
 
   - intent: general_info_vocational_education
     examples: |
@@ -721,7 +721,7 @@ nlu:
       - How can similarly named institutions in a state strategically position themselves to avoid confusion and enhance their uniqueness?
       - What actions should institutions with the same name in a state take to create clear distinctions and enhance their individual profiles?
     
-   - intent: government_support_public_universities
+  - intent: government_support_public_universities
     examples: |
       - How does the Government of India and State Governments contribute to the support of Public Universities in India?
       - Can you elaborate on the involvement of the Government of India and State Governments in aiding Public Universities in India?
@@ -831,7 +831,7 @@ nlu:
       - What steps should Central/State and Private Universities take when applying for AICTE's approval, and what detailed information is expected during the application process?
       - How do Central/State and Private Universities go about applying for AICTE's approval, and what specific details are essential in the application process?
 
-   - intent: jurisdiction_approval_authority
+  - intent: jurisdiction_approval_authority
     examples: |
       - Could you clarify the approved area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities and the approving authority?
       - What is the sanctioned area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities, and who has the authority to grant approval?
@@ -880,22 +880,16 @@ nlu:
       - How does AICTE notify the time schedule for processing applications?
       - What methods does AICTE employ to communicate the timeline and schedule for processing applications?
       - Could you explain the procedures through which AICTE conveys the timetable and schedule for processing applications?
-      - In notifying the time schedule for application processing, what approaches or mechanisms are utilized by AICTE?
       - What are the communication channels or means by which AICTE informs about the time schedule for processing applications?
       - How does AICTE disseminate information regarding the time schedule for the processing of applications?
-      - Could you elaborate on the ways in which AICTE communicates the timeline and schedule for application processing?
-      - In terms of notifying the time schedule, what strategies or avenues does AICTE use for processing applications?
+      - Could you elaborate on the ways in which AICTE communicates the timeline and schedule for an application processing?
+      - In terms of notifying the time schedule, what strategies or avenues does AICTE use for processing the applications?
 
   - intent: university_approval_request_requirement
     examples: |
       - What is the mandatory requirement for processing any request from universities regarding approval?
       - What is the essential prerequisite for handling any approval request from universities?
-      - Could you outline the compulsory requirement that must be met for processing any request from universities seeking approval?
-      - In the context of processing approval requests from universities, what is the non-negotiable requirement?
-      - What is the mandated condition that universities must fulfill when submitting requests for approval processing?
-      - Could you specify the indispensable requirement associated with the processing of any request from universities regarding approval?
-      - In processing requests for approval from universities, what is the mandatory condition that must be satisfied?
-      - What is the unavoidable requirement for universities when making requests for approval processing?
+      - Could you outline the requirement that must be met for processing any request from universities seeking approval?
 
   - intent: aicte_application_invitation_channels
     examples: |
@@ -945,11 +939,7 @@ nlu:
     examples: |
       - Could you specify the academic disciplines in which programs are included and covered by the application process?
       - In the application process, which academic disciplines see the inclusion and coverage of programs?
-      - What are the academic disciplines wherein programs are considered and covered as part of the application process?
-      - Can you provide insights into the specific academic disciplines covered by programs in the application process?
-      - In terms of the application process, which academic disciplines have programs that are included and covered?
       - Could you elaborate on the inclusion and coverage of programs in the application process within specific academic disciplines?
-      - What academic disciplines witness the incorporation and coverage of programs in the application process?
       - In the context of the application process, which academic disciplines see the inclusion and consideration of programs?
 
   - intent: specific_categories_approval_handbook
@@ -979,15 +969,12 @@ nlu:
       - What methods does AICTE employ to convey the schedule and timeline for processing applications?
       - Could you outline the communication strategies or mechanisms used by AICTE to communicate the time schedule for processing applications?
       - In notifying the time schedule for application processing, what approaches or mechanisms are utilized by AICTE?
-      - What are the communication channels or means by which AICTE informs about the time schedule for processing applications?
-      - How does AICTE disseminate information regarding the time schedule for the processing of applications?
       - Could you elaborate on the ways in which AICTE communicates the timeline and schedule for application processing?
       - In terms of notifying the time schedule, what strategies or avenues does AICTE use for processing applications?
       - What are the mechanisms employed by AICTE to inform stakeholders about the time schedule for processing applications?
 
   - intent: university_approval_request_mandatory_requirement
     examples: |
-      - What is the essential prerequisite for handling any approval request from universities?
       - Could you outline the compulsory requirement that must be met for processing any request from universities seeking approval?
       - In the context of processing approval requests from universities, what is the non-negotiable requirement?
       - What is the mandated condition that universities must fulfill when submitting requests for approval processing?
@@ -998,14 +985,10 @@ nlu:
 
   - intent: technical_program_disciplines_focus
     examples: |
-      - Could you specify the academic disciplines in which programs are included and covered by the application process?
-      - In the application process, which academic disciplines see the inclusion and coverage of programs?
       - What are the academic disciplines wherein programs are considered and covered as part of the application process?
       - Can you provide insights into the specific academic disciplines covered by programs in the application process?
       - In terms of the application process, which academic disciplines have programs that are included and covered?
-      - Could you elaborate on the inclusion and coverage of programs in the application process within specific academic disciplines?
       - What academic disciplines witness the incorporation and coverage of programs in the application process?
-      - In the context of the application process, which academic disciplines see the inclusion and consideration of programs?
 
   - intent: eligibility_criteria_universities
     examples: |
@@ -1411,7 +1394,7 @@ nlu:
       - Regarding Off Campuses/Constituent Colleges, what specific considerations and criteria must be met for approval?
       - Could you explain the necessary steps and conditions for Off Campuses/Constituent Colleges in the approval process?
 
-    - intent: documents_upload_digital_signatures_significance
+  - intent: documents_upload_digital_signatures_significance
     examples: |
       - What documents must applicants upload, and could you elaborate on the role of digital signatures in the application process?
       - Can you provide details on the required documents for applicants and the importance of incorporating digital signatures in the application process?
@@ -1554,7 +1537,7 @@ nlu:
       - What is the fee structure for universities under Technical Education Regulatory (TER) Charges, as highlighted in the Approval Process Handbook?
       - Can you elucidate on the charges associated with Technical Education Regulatory (TER) that universities are obligated to pay, as per the Approval Process Handbook?
 
-    - intent: extension_of_approval_processing_ratification
+  - intent: extension_of_approval_processing_ratification
     examples: |
       - How are applications for Extension of Approval processed, and who ratifies the decisions in this regard?
       - Can you explain the procedural steps involved in processing applications for the Extension of Approval, and who holds the authority to ratify the decisions?
@@ -1673,7 +1656,6 @@ nlu:
       - Can you specify the universities that enjoy exemption from the annual approval process for Technical Programmes/Courses?
       - Are there specific criteria or types of universities that do not need to go through the annual approval process for Technical Programmes/Courses?
       - Can you elaborate on the universities that are not subject to the annual approval process for offering Technical Programmes/Courses?
-      - What conditions or characteristics determine if a university is exempted from the annual approval process for Technical Programmes/Courses?
 
   - intent: actions_unapproved_technical_program_running
     examples: |

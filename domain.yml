@@ -3,7 +3,6 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - bot_challenge
   - general_info_vocational_education
   - nsqf
   - affiliation_vocational_courses
@@ -99,7 +98,7 @@ intents:
   - ter_charges_applicability_main_off_campus
   - annual_increase_ter_charges
   - circumstances_additional_ter_charges
-   - additional_ter_charges_payment
+  - additional_ter_charges_payment
   - aicte_approval_application_submission
   - application_data_editing_provision
   - importance_of_cut_off_date_submission
@@ -153,9 +152,6 @@ responses:
 
   utter_goodbye:
   - text: "Bye, have a nice day."
-
-  utter_bot_challenge:
-  - text: "Sorry, Please ask me questions regarding APH Approval Process Handbook"
 
   utter_general_info_vocational_education:
   - text: "Vocational Education is occupation-based learning with practical training, directly developing expertise in specific skills. It differs from traditional education by focusing on job preparation and skill specialization."
@@ -339,7 +335,7 @@ responses:
   - text: "Universities in India are recognized by the University Grants Commission (UGC), in accordance with the UGC Act, 1956."
 
   utter_central_vs_state_universities:
-  - text: "Central Universities in India are established by an Act of Parliament and fall under the purview of the Ministry of Education (MoE). State Universities are run by the concerned State Government/Union Territories and are established by an Act enacted by the legislative assembly of the respective State/UT. A University may also have a "Constituent College," which is an Institution/Department/College/School as a part of the University."
+  - text: "Central Universities in India are established by an Act of Parliament and fall under the purview of the Ministry of Education (MoE). State Universities are run by the concerned State Government/Union Territories and are established by an Act enacted by the legislative assembly of the respective State/UT. A University may also have a \"Constituent College,\" which is an Institution/Department/College/School as a part of the University."
 
   utter_constituent_college_significance:
   - text: "A \"Constituent College\" in the context of a University in India refers to an Institution/Department/College/School that is a part of the University."
@@ -487,7 +483,7 @@ responses:
   - text: "Buildings for the First Year of the Programme(s) should be completed in all respects as per the Infrastructure requirements specified in the Approval Process Handbook. The building plan for the entire duration of the Programme(s) of the University shall be prepared by an architect registered with the Council of Architecture/Licensed Surveyor and approved by the Competent Authority designated by the concerned State Government/UT."
 
   utter_head_of_university_qualifications:
-  - text: "The Head of the University shall be named as the "Vice Chancellor" and should have qualifications as per UGC norms."
+  - text: "The Head of the University shall be named as the \"Vice Chancellor\" and should have qualifications as per UGC norms."
 
   utter_restrictions_on_university_names:
   - text: "Yes, the Applicant shall not use the name of the University in such a way that the abbreviated form of the name becomes IIM/IIT/IISc/NIT/IISER/IIIT/IIEST/AICTE/UGC/MoE/GoI. The Applicant shall also not use specific words such as Government, India, Indian, National, All India, All India Council, Commission anywhere in the name of the University, as prohibited under the Emblems and Names (Prevention of Improper Use) Act, 1950. These restrictions do not apply if the University is established by the Government of India or its name is approved by the Government of India."
@@ -537,35 +533,28 @@ responses:
   - text: "The University/Applicant, if aggrieved by the decision of the Executive Committee, shall appeal as per Clause 1.11 of the Approval Process Handbook, and the final decision of the Council shall be uploaded as per the Academic Calendar."
 
   utter_infrastructure_faculty_requirements_handbook:
-  - text: "Infrastructure, faculty, and other facilities shall be made available as per the norms, standards, and conditions prescribed by the Council from time to time."
+    - text: "Infrastructure, faculty, and other facilities shall be made available as per the norms, standards, and conditions prescribed by the Council from time to time."
 
-    utter_final_approval_rejection_communication:
-  - text: "A final Letter of Approval/ Letter of Rejection with the reasons for rejection of the application shall be issued to the University through the Web-Portal as per the Academic Calendar."
+  utter_final_approval_rejection_communication:
+    - text: "A final Letter of Approval/ Letter of Rejection with the reasons for rejection of the application shall be issued to the University through the Web-Portal as per the Academic Calendar."
 
   utter_deadline_for_approval_letter_issuance:
-  - text: "LoA shall not be granted after the last date as mentioned in the Academic Calendar."
+    - text: "LoA shall not be granted after the last date as mentioned in the Academic Calendar."
 
   utter_security_deposit_exempted_institutions:
-  - text: "Central University/ State University/ Institution Deemed to be University (Government) are not required to pay the Security Deposit."
+    - text: "Central University/ State University/ Institution Deemed to be University (Government) are not required to pay the Security Deposit."
 
   utter_private_universities_security_deposit_exemption:
-  - text: "Private Universities/Institution Deemed to be University (Private) which were in existence for more than 10 years with UGC are EXEMPTED from the payment of Security Deposit, else the University shall pay the Security Deposit for 10 Years as per Chapter-I (Table 1.4) of this Approval Process Handbook."
+    - text: "Private Universities/Institution Deemed to be University (Private) which were in existence for more than 10 years with UGC are EXEMPTED from the payment of Security Deposit, else the University shall pay the Security Deposit for 10 Years as per Chapter-I (Table 1.4) of this Approval Process Handbook."
 
   utter_security_deposit_creation_for_new_programme_level:
-  - text: "If any University is starting a new Programme/Level, it shall create the Security Deposit as per the requirements of the Approval Process Handbook, even if the University is in existence for more than 10 years with UGC.
-    NOTE:
-    I. Universities which were granted approval from AICTE earlier as a Technical Institution and created Security Deposit and got released after the maturity period are not required to pay the Security Deposit; else the University shall pay the Security Deposit for the remaining period of 10 years, as applicable.
-    II. What happens to the amount deposited by the University?
-        The amount deposited by the University shall remain with the Council. The interest accrued on this deposit shall be utilized by the Council for Institutional Development activities, Quality Improvement Programme for Faculty members, and giving Scholarships to students.
-    III. What is the condition for returning the deposited amount to the Trust/Society/Company?
-        The Principal amount ONLY shall be returned to the Trust/Society/Company on completion of the term. However, the term of the deposited amount can be extended for a further period as shall be decided on a case-to-case basis and/or forfeited in case of any violation of norms, conditions, and requirements and/or Non-Performance by the University and/or Complaints against the University.
-    "
+    - text: "If any University is starting a new Programme/Level, it shall create the Security Deposit as per the requirements of the Approval Process Handbook, even if the University is in existence for more than 10 years with UGC.\nNOTE:\nI. Universities which were granted approval from AICTE earlier as a Technical Institution and created Security Deposit and got released after the maturity period are not required to pay the Security Deposit; else the University shall pay the Security Deposit for the remaining period of 10 years, as applicable.\nII. What happens to the amount deposited by the University?\nThe amount deposited by the University shall remain with the Council. The interest accrued on this deposit shall be utilized by the Council for Institutional Development activities, Quality Improvement Programme for Faculty members, and giving Scholarships to students.\nIII. What is the condition for returning the deposited amount to the Trust/Society/Company?\nThe Principal amount ONLY shall be returned to the Trust/Society/Company on completion of the term. However, the term of the deposited amount can be extended for a further period as shall be decided on a case-to-case basis and/or forfeited in case of any violation of norms, conditions, and requirements and/or Non-Performance by the University and/or Complaints against the University."
+
   utter_expert_visit_committee_exemption_supernumerary_seats:
-  - text: "Expert Visit Committee for the Introduction of supernumerary seats for OCI/Foreign Nationals/Children of Indian Workers in the Gulf Countries shall be exempted from the requirements and eligibility mentioned in the concerned Clauses of the Approval Process Handbook for universities eligible for Graded Autonomy."
+    - text: "Expert Visit Committee for the Introduction of supernumerary seats for OCI/Foreign Nationals/Children of Indian Workers in the Gulf Countries shall be exempted from the requirements and eligibility mentioned in the concerned Clauses of the Approval Process Handbook for universities eligible for Graded Autonomy."
 
   utter_ter_charges_applicable_approval_handbook:
-  - text:"Technical Education Regulatory (TER) Charges as mentioned in the Approval Process Handbook are applicable for universities.
-    \"NOTE\": In an extraordinary circumstance, if an additional Scrutiny Committee, Expert Visit Committee, and Standing Hearing Committee/Standing Appellate Committee has to be conducted (inclusive of the Court directions to any type of institutions), then the Applicant has to remit an additional TER Charges as applicable in Clause 4.5.2."
+    - text: "Technical Education Regulatory (TER) Charges as mentioned in the Approval Process Handbook are applicable for universities."
 
   utter_extension_of_approval_processing_ratification:
   - text: "The applications for Extension of Approval are processed as per the procedure specified in the Approval Process Handbook, and the Executive Committee/Council shall grant Extension of Approval as applicable for the universities to continue for the conduct of Technical Programme(s) and Course(s). The decisions taken by the Executive Committee shall be ratified by the Council."
@@ -609,7 +598,6 @@ responses:
 actions:
   - utter_greet
   - utter_goodbye
-  - utter_bot_challenge
   - utter_general_info_vocational_education
   - utter_nsqf
   - utter_affiliation_vocational_courses

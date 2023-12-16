@@ -554,7 +554,7 @@ class Actioncentralvsstateuniversities(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(text="Central Universities in India are established by an Act of Parliament and fall under the purview of the Ministry of Education (MoE). State Universities are run by the concerned State Government/Union Territories and are established by an Act enacted by the legislative assembly of the respective State/UT. A University may also have a "Constituent College," which is an Institution/Department/College/School as a part of the University.")
+        dispatcher.utter_message(text='Central Universities in India are established by an Act of Parliament and fall under the purview of the Ministry of Education (MoE). State Universities are run by the concerned State Government/Union Territories and are established by an Act enacted by the legislative assembly of the respective State/UT. A University may also have a "Constituent College," which is an Institution/Department/College/School as a part of the University.')
         return []
 
 class Actionconstituentcollegesignificance(Action):
