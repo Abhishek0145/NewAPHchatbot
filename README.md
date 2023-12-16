@@ -13,8 +13,10 @@ pip3 install rasa
 
 ## Usage
 Run the Chatbot:
-rasa run actions\n
-\nrasa shell
+
+rasa run actions
+
+rasa shell
 
 This will start the action server and launch the chatbot in the interactive shell.
 
