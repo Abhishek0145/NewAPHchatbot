@@ -25,9 +25,8 @@ Engage in a conversation with the chatbot. Ask questions related to AICTE approv
 ## Testing Environment
 For the best experience, we recommend trying out the chatbot in a Github Codespace environment. Rasa is compatible with Python versions 3.10 or lower versions up to 3.8.
 
-##Author
+## Author
 
-### Abhishek Sharma
-### Email: abhisheksharmaa1404@gmail.com
+### Abhishek Sharma ### Email: abhisheksharmaa1404@gmail.com
 Feel free to reach out for any further inquiries or assistance!
 
