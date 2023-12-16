@@ -1,0 +1,716 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+#- rule: Say 'I am a bot' anytime the user challenges
+#  steps:
+#  - intent: bot_challenge
+#  - action: utter_iamabot
+
+- rule: Use intent 'regulation_fees_vocational_courses' anytime anyone ask about fees regulation or fees of vocational courses or anything related to regulating fees of vocational courses
+  steps:
+  - intent: regulation_fees_vocational_courses
+  - action: utter_regulation_fees_vocational_courses
+
+- rule: if the user ask anything about NSQF reply with action "utter_nsqf"
+  steps:
+  - intent: nsqf
+  - action: utter_nsqf
+
+- rule: if the user ask anything about "Inquire about Affiliation of Vocational Courses" or something matching with this please reply with action "utter_affiliation_vocational_courses"
+  steps:
+  - intent: affiliation_vocational_courses
+  - action: utter_affiliation_vocational_courses
+
+- rule: if the user ask anything about Diploma/Undergraduate Programs or d_vocb_voc courses or programs reply with action "utter_d_voc_b_voc_programmes"
+  steps:
+  - intent: d_voc_b_voc_programmes
+  - action: utter_d_voc_b_voc_programmes
+
+- rule: if the user asks anything about Credit-based Modular Programs reply with action "utter_credit_based_modular_programs" or user asks anything related to credit-based modular programs
+  steps:
+  - intent: credit_based_modular_programs
+  - action: utter_credit_based_modular_programs
+
+- rule: if the user asks anything about Curriculum Mix in Vocational Education i.e., balance between traditional learning and practical learning, respond with action "utter_curriculum_mix_vocational_education"
+  steps:
+  - intent: curriculum_mix_vocational_education
+  - action: utter_curriculum_mix_vocational_education
+
+- rule: if the user asks anything about "who hold the authority to approve the content of our educational curriculum" respond with action "utter_curriculum_approval_oversight"
+  steps:
+  - intent: curriculum_approval_oversight
+  - action: utter_curriculum_approval_oversight
+
+- rule: if the user asks anything about "Role of General Education Component" respond with action "utter_role_general_education_component"
+  steps:
+  - intent: role_general_education_component
+  - action: utter_role_general_education_component
+
+- rule: if the user asks anything about "Emphasis on Credit-based Modular Programs for voactional education" respond with action "utter_emphasis_credit_based_modular_programs"
+  steps:
+  - intent: emphasis_credit_based_modular_programs
+  - action: utter_emphasis_credit_based_modular_programs
+
+- rule: if the user asks anything about design the curriculum for acquiring skills, respond with action "utter_focus_skill_development_component_design"
+  steps:
+  - intent: focus_skill_development_component_design
+  - action: utter_focus_skill_development_component_design
+
+- rule: if the user asks anything about absence of "National Occupational Standards (NOS)" respond with action "utter_national_occupational_standards"
+  steps:
+  - intent: national_occupational_standards
+  - action: utter_national_occupational_standards
+
+- rule: if the user asks anything about "What is the primary focus of the school plan in developing skills for the workplace, and why is it valued?" respond with action "utter_curriculum_emphasis_work_readiness_skills"
+  steps:
+  - intent: curriculum_emphasis_work_readiness_skills
+  - action: utter_curriculum_emphasis_work_readiness_skills
+
+- rule: Respond to queries about the determination of general education component in the school curriculum
+  steps:
+  - intent: determining_general_education_component
+  - action: utter_determining_general_education_component
+
+- rule: Respond to queries about completing skill modules and acquiring credits in Vocational Education
+  steps:
+  - intent: completing_skill_modules_acquiring_credits
+  - action: utter_completing_skill_modules_acquiring_credits
+
+- rule: Respond to queries about transferring earned credits and receiving awards in Vocational Education
+  steps:
+  - intent: credit_transfer_certification
+  - action: utter_credit_transfer_certification
+
+- rule: Respond to queries about finding information on 'Knowledge and Skill' certification levels
+  steps:
+  - intent: certification_levels_information
+  - action: utter_certification_levels_information
+
+- rule: Respond to queries about transitioning from regular school to Vocational classes and the role of SKP/Training Providers
+  steps:
+  - intent: general_stream_to_vocational_stream_transition
+  - action: utter_general_stream_to_vocational_stream_transition
+
+- rule: Respond to queries about transitioning between Vocational classes and regular higher studies as per NEP 2020
+  steps:
+  - intent: movement_between_vocational_and_formal_higher_education_streams
+  - action: utter_movement_between_vocational_and_formal_higher_education_streams
+
+- rule: Respond to queries about the process of requesting a No Objection Certificate (NOC) for schools
+  steps:
+  - intent: noc_process
+  - action: utter_noc_process
+
+- rule: Respond to queries about prerequisites for establishing a technical institution
+  steps:
+  - intent: prerequisites_for_establishing_technical_institution
+  - action: utter_prerequisites_for_establishing_technical_institution
+
+- rule: Respond to queries about the significance of adhering to Central, State, and Local Laws
+  steps:
+  - intent: significance_of_adhering_to_laws
+  - action: utter_significance_of_adhering_to_laws
+
+- rule: Respond to queries about the role of the State Government/UT in the establishment of technical institutions
+  steps:
+  - intent: role_of_state_government_in_establishment
+  - action: utter_role_of_state_government_in_establishment
+
+- rule: Respond to queries about how AICTE handles applications for the establishment of technical institutions
+  steps:
+  - intent: AICTE_handling_applications
+  - action: utter_AICTE_handling_applications
+
+- rule: Respond to queries about the time frame for submission and consequences
+  steps:
+  - intent: time_frame_for_submission_and_consequences
+  - action: utter_time_frame_for_submission_and_consequences
+
+- rule: Respond to queries about types of programs for approval
+  steps:
+  - intent: types_of_programs_for_approval
+  - action: utter_types_of_programs_for_approval
+
+- rule: Respond to queries about eligibility criteria for promoters
+  steps:
+  - intent: eligibility_criteria_for_promoters
+  - action: utter_eligibility_criteria_for_promoters
+
+- rule: Respond to queries about the ineligibility of certain programs
+  steps:
+  - intent: ineligibility_of_certain_programs
+  - action: utter_ineligibility_of_certain_programs
+
+- rule: Respond to queries about Ministry of Education schemes for establishment
+  steps:
+  - intent: Ministry_of_Education_schemes_for_establishment
+  - action: utter_Ministry_of_Education_schemes_for_establishment
+
+- rule: Respond to queries about the consequences of not shifting location
+  steps:
+  - intent: consequences_of_not_shifting_location
+  - action: utter_consequences_of_not_shifting_location
+
+- rule: Respond to queries about existing institutions' approval by AICTE
+  steps:
+  - intent: existing_institutions_approval_by_AICTE
+  - action: utter_existing_institutions_approval_by_AICTE
+
+- rule: Respond to queries about additional charges for extra committees
+  steps:
+  - intent: additional_charges_for_extra_committees
+  - action: utter_additional_charges_for_extra_committees
+
+- rule: Respond to queries about the consequences of not paying TER within the deadline
+  steps:
+  - intent: consequences_of_not_paying_TER_within_deadline
+  - action: utter_consequences_of_not_paying_TER_within_deadline
+
+- rule: Respond to queries about the importance of online application through NSWS
+  steps:
+  - intent: importance_of_online_application_through_NSWS
+  - action: utter_importance_of_online_application_through_NSWS
+
+- rule: Respond to queries about how AICTE handles refund or excess payment
+  steps:
+  - intent: AICTE_handling_refund_or_excess_payment
+  - action: utter_AICTE_handling_refund_or_excess_payment
+
+- rule: Respond to queries about USER ID allotment and associated cost
+  steps:
+  - intent: USER_ID_allotment_and_associated_cost
+  - action: utter_USER_ID_allotment_and_associated_cost
+
+- rule: Respond to queries about the procedure for password recovery and charges
+  steps:
+  - intent: procedure_for_password_recovery_and_charges
+  - action: utter_procedure_for_password_recovery_and_charges
+
+- rule: Respond to queries about TER charges calculation and annual increase
+  steps:
+  - intent: TER_charges_calculation_and_annual_increase
+  - action: utter_TER_charges_calculation_and_annual_increase
+
+- rule: Respond to queries about eligibility for TER charge refund
+  steps:
+  - intent: eligibility_for_TER_charge_refund
+  - action: utter_eligibility_for_TER_charge_refund
+
+- rule: Respond to queries about precautions for data entry and submission
+  steps:
+  - intent: precautions_for_data_entry_and_submission
+  - action: utter_precautions_for_data_entry_and_submission
+
+- rule: Respond to queries about the significance of Digital Signature Certificate
+  steps:
+  - intent: significance_of_Digital_Signature_Certificate
+  - action: utter_significance_of_Digital_Signature_Certificate
+
+- rule: Respond to queries about the significance of Affidavit 2 and consequences of false info
+  steps:
+  - intent: significance_of_Affidavit_2_and_consequences_of_false_info
+  - action: utter_significance_of_Affidavit_2_and_consequences_of_false_info
+
+- rule: Respond to queries about mandatory submission to State Government and affiliating University
+  steps:
+  - intent: mandatory_submission_to_State_Government_and_affiliating_University
+  - action: utter_mandatory_submission_to_State_Government_and_affiliating_University
+
+- rule: Respond to queries about the timeline for views from State Government and affiliating University
+  steps:
+  - intent: timeline_for_views_from_State_Government_and_affiliating_University
+  - action: utter_timeline_for_views_from_State_Government_and_affiliating_University
+
+- rule: lifting_of_moratorium_for_new_institutions
+  steps:
+  - intent: lifting_of_moratorium_for_new_institutions
+  - action: utter_lifting_of_moratorium_for_new_institutions
+
+- rule: requirements_and_eligibility_for_Promoter_Trust_Society_Company
+  steps:
+  - intent: requirements_and_eligibility_for_Promoter_Trust_Society_Company
+  - action: utter_requirements_and_eligibility_for_Promoter_Trust_Society_Company
+
+- rule: minimum_funds_required_for_proof_of_operational_expenses
+  steps:
+  - intent: minimum_funds_required_for_proof_of_operational_expenses
+  - action: utter_minimum_funds_required_for_proof_of_operational_expenses
+
+- rule: building_plan_requirements_and_approval
+  steps:
+  - intent: building_plan_requirements_and_approval
+  - action: utter_building_plan_requirements_and_approval
+
+- rule: qualifications_required_for_head_of_technical_institution
+  steps:
+  - intent: qualifications_required_for_head_of_technical_institution
+  - action: utter_qualifications_required_for_head_of_technical_institution
+
+- rule: existing_institutions_applying_for_closure_and_starting_new_institution
+  steps:
+  - intent: existing_institutions_applying_for_closure_and_starting_new_institution
+  - action: utter_existing_institutions_applying_for_closure_and_starting_new_institution
+
+- rule: outcomes_of_approval_under_section_1.5.2a
+  steps:
+  - intent: outcomes_of_approval_under_section_1.5.2a
+  - action: utter_outcomes_of_approval_under_section_1.5.2a
+
+- rule: fund_position_requirements_in_terms_of_FDRs_and_bank_accounts
+  steps:
+  - intent: fund_position_requirements_in_terms_of_FDRs_and_bank_accounts
+  - action: utter_fund_position_requirements_in_terms_of_FDRs_and_bank_accounts
+
+- rule: requirements_for_Government_Government-Aided_Institutions_Central_State_Universities
+  steps:
+  - intent: requirements_for_Government_Government-Aided_Institutions_Central_State_Universities
+  - action: utter_requirements_for_Government_Government-Aided_Institutions_Central_State_Universities
+
+- rule: restrictions_on_use_of_names_for_new_technical_institution
+  steps:
+  - intent: restrictions_on_use_of_names_for_new_technical_institution
+  - action: utter_restrictions_on_use_of_names_for_new_technical_institution
+
+- rule: differentiation_of_existing_institutions_with_same_name_within_state
+  steps:
+  - intent: differentiation_of_existing_institutions_with_same_name_within_state
+  - action: utter_differentiation_of_existing_institutions_with_same_name_within_state
+
+
+- rule: government_support_public_universities
+  steps:
+  - intent: government_support_public_universities
+  - action: utter_government_support_public_universities
+
+- rule: private_universities_support
+  steps:
+  - intent: private_universities_support
+  - action: utter_private_universities_support
+
+- rule: university_recognition_regulatory_body
+  steps:
+  - intent: university_recognition_regulatory_body
+  - action: utter_university_recognition_regulatory_body
+
+- rule: central_vs_state_universities
+  steps:
+  - intent: central_vs_state_universities
+  - action: utter_central_vs_state_universities
+
+- rule: constituent_college_significance
+  steps:
+  - intent: constituent_college_significance
+  - action: utter_constituent_college_significance
+
+- rule: deemed_university_declaration_process
+  steps:
+  - intent: deemed_university_declaration_process
+  - action: utter_deemed_university_declaration_process
+
+- rule: state_private_universities_characteristic
+  steps:
+  - intent: state_private_universities_characteristic
+  - action: utter_state_private_universities_characteristic
+
+- rule: technical_universities_aicte_norms
+  steps:
+  - intent: technical_universities_aicte_norms
+  - action: utter_technical_universities_aicte_norms
+
+- rule: aicte_inspection_mandate
+  steps:
+  - intent: aicte_inspection_mandate
+  - action: utter_aicte_inspection_mandate
+
+- rule: aicte_approval_application_process
+  steps:
+  - intent: aicte_approval_application_process
+  - action: utter_aicte_approval_application_process
+
+- rule: jurisdiction_approval_authority
+  steps:
+  - intent: jurisdiction_approval_authority
+  - action: utter_jurisdiction_approval_authority
+
+- rule: admission_restrictions_deemed_universities
+  steps:
+  - intent: admission_restrictions_deemed_universities
+  - action: utter_admission_restrictions_deemed_universities
+
+- rule: extension_approval_criteria
+  steps:
+  - intent: extension_approval_criteria
+  - action: utter_extension_approval_criteria
+
+- rule: aicte_approval_annual_data_requirement
+  steps:
+  - intent: aicte_approval_annual_data_requirement
+  - action: utter_aicte_approval_annual_data_requirement
+
+- rule: aicte_processing_schedule_notification
+  steps:
+  - intent: aicte_processing_schedule_notification
+  - action: utter_aicte_processing_schedule_notification
+
+- rule: university_approval_request_requirement
+  steps:
+  - intent: university_approval_request_requirement
+  - action: utter_university_approval_request_requirement
+
+- rule: aicte_application_invitation_channels
+  steps:
+  - intent: aicte_application_invitation_channels
+  - action: utter_aicte_application_invitation_channels
+
+- rule: aicte_application_deadline
+  steps:
+  - intent: aicte_application_deadline
+  - action: utter_aicte_application_deadline
+
+- rule: application_process_handbook_scope
+  steps:
+  - intent: application_process_handbook_scope
+  - action: utter_application_process_handbook_scope
+
+- rule: technical_program_levels_covered
+  steps:
+  - intent: technical_program_levels_covered
+  - action: utter_technical_program_levels_covered
+
+- rule: academic_disciplines_covered
+  steps:
+  - intent: academic_disciplines_covered
+  - action: utter_academic_disciplines_covered
+
+- rule: specific_categories_approval_handbook
+  steps:
+  - intent: specific_categories_approval_handbook
+  - action: utter_specific_categories_approval_handbook
+
+- rule: program_focus_approval_process
+  steps:
+  - intent: program_focus_approval_process
+  - action: utter_program_focus_approval_process
+
+- rule: aicte_processing_schedule_communication
+  steps:
+  - intent: aicte_processing_schedule_communication
+  - action: utter_aicte_processing_schedule_communication
+
+- rule: university_approval_request_mandatory_requirement
+  steps:
+  - intent: university_approval_request_mandatory_requirement
+  - action: utter_university_approval_request_mandatory_requirement
+
+- rule: technical_program_disciplines_focus
+  steps:
+  - intent: technical_program_disciplines_focus
+  - action: utter_technical_program_disciplines_focus
+
+- rule: eligibility_criteria_universities
+  steps:
+  - intent: eligibility_criteria_universities
+  - action: utter_eligibility_criteria_universities
+
+- rule: technical_program_levels_in_application_process
+  steps:
+  - intent: technical_program_levels_in_application_process
+  - action: utter_technical_program_levels_in_application_process
+
+- rule: multiple_campuses_approval_process
+  steps:
+  - intent: multiple_campuses_approval_process
+  - action: utter_multiple_campuses_approval_process
+
+- rule: permitted_university_courses_nomenclatures
+  steps:
+  - intent: permitted_university_courses_nomenclatures
+  - action: utter_permitted_university_courses_nomenclatures
+
+- rule: directive_central_state_private_universities
+  steps:
+  - intent: directive_central_state_private_universities
+  - action: utter_directive_central_state_private_universities
+
+- rule: directive_deemed_universities_aicte_approval
+  steps:
+  - intent: directive_deemed_universities_aicte_approval
+  - action: utter_directive_deemed_universities_aicte_approval
+
+- rule: norms_standards_requirement_universities
+  steps:
+  - intent: norms_standards_requirement_universities
+  - action: utter_norms_standards_requirement_universities
+
+- rule: partial_approval_permitting_conditions
+  steps:
+  - intent: partial_approval_permitting_conditions
+  - action: utter_partial_approval_permitting_conditions
+
+- rule: user_id_password_approval_process
+  steps:
+  - intent: user_id_password_approval_process
+  - action: utter_user_id_password_approval_process
+
+- rule: ter_charges_definition
+  steps:
+  - intent: ter_charges_definition
+  - action: utter_ter_charges_definition
+
+- rule: ter_charges_structure_first_approval
+  steps:
+  - intent: ter_charges_structure_first_approval
+  - action: utter_ter_charges_structure_first_approval
+
+- rule: ter_charges_applicability_main_off_campus
+  steps:
+  - intent: ter_charges_applicability_main_off_campus
+  - action: utter_ter_charges_applicability_main_off_campus
+
+- rule: annual_increase_ter_charges
+  steps:
+  - intent: annual_increase_ter_charges
+  - action: utter_annual_increase_ter_charges
+
+- rule: circumstances_additional_ter_charges
+  steps:
+  - intent: circumstances_additional_ter_charges
+  - action: utter_circumstances_additional_ter_charges
+
+- rule: additional_ter_charges_payment
+  steps:
+  - intent: additional_ter_charges_payment
+  - action: utter_additional_ter_charges_payment
+
+- rule: aicte_approval_application_submission
+  steps:
+  - intent: aicte_approval_application_submission
+  - action: utter_aicte_approval_application_submission
+
+- rule: application_data_editing_provision
+  steps:
+  - intent: application_data_editing_provision
+  - action: utter_application_data_editing_provision
+
+- rule: importance_of_cut_off_date_submission
+  steps:
+  - intent: importance_of_cut_off_date_submission
+  - action: utter_importance_of_cut_off_date_submission
+
+- rule: affidavit_requirement_application_process
+  steps:
+  - intent: affidavit_requirement_application_process
+  - action: utter_affidavit_requirement_application_process
+
+- rule: documents_submission_scrutiny
+  steps:
+  - intent: documents_submission_scrutiny
+  - action: utter_documents_submission_scrutiny
+
+- rule: document_submission_process_chapter_ii_iii
+  steps:
+  - intent: document_submission_process_chapter_ii_iii
+  - action: utter_document_submission_process_chapter_ii_iii
+
+- rule: promoter_trust_society_company_university_requirements
+  steps:
+  - intent: promoter_trust_society_company_university_requirements
+  - action: utter_promoter_trust_society_company_university_requirements
+
+- rule: university_approval_process_handbook_norms
+  steps:
+  - intent: university_approval_process_handbook_norms
+  - action: utter_university_approval_process_handbook_norms
+
+- rule: completion_of_buildings_requirements
+  steps:
+  - intent: completion_of_buildings_requirements
+  - action: utter_completion_of_buildings_requirements
+
+- rule: head_of_university_qualifications
+  steps:
+  - intent: head_of_university_qualifications
+  - action: utter_head_of_university_qualifications
+
+- rule: restrictions_on_university_names
+  steps:
+  - intent: restrictions_on_university_names
+  - action: utter_restrictions_on_university_names
+
+- rule: approval_of_technical_programs_by_ugc
+  steps:
+  - intent: approval_of_technical_programs_by_ugc
+  - action: utter_approval_of_technical_programs_by_ugc
+
+- rule: application_processing_handbook
+  steps:
+  - intent: application_processing_handbook
+  - action: utter_application_processing_handbook
+
+- rule: key_evaluation_criteria_ugc_regulations
+  steps:
+  - intent: key_evaluation_criteria_ugc_regulations
+  - action: utter_key_evaluation_criteria_ugc_regulations
+
+- rule: consequences_of_missing_documents_evaluation
+  steps:
+  - intent: consequences_of_missing_documents_evaluation
+  - action: utter_consequences_of_missing_documents_evaluation
+
+- rule: evaluation_of_universities_running_technical_programs
+  steps:
+  - intent: evaluation_of_universities_running_technical_programs
+  - action: utter_evaluation_of_universities_running_technical_programs
+
+- rule: aicte_approved_universities_categories_application
+  steps:
+  - intent: aicte_approved_universities_categories_application
+  - action: utter_aicte_approved_universities_categories_application
+
+- rule: considerations_for_medical_universities_approval
+  steps:
+  - intent: considerations_for_medical_universities_approval
+  - action: utter_considerations_for_medical_universities_approval
+
+- rule: off_campuses_constituent_colleges_requirement
+  steps:
+  - intent: off_campuses_constituent_colleges_requirement
+  - action: utter_off_campuses_constituent_colleges_requirement
+
+- rule: documents_upload_digital_signatures_significance
+  steps:
+  - intent: documents_upload_digital_signatures_significance
+  - action: utter_documents_upload_digital_signatures_significance
+
+- rule: expert_visit_committee_new_institution_deemed_university
+  steps:
+  - intent: expert_visit_committee_new_institution_deemed_university
+  - action: utter_expert_visit_committee_new_institution_deemed_university
+
+- rule: rejected_application_appeal_provision
+  steps:
+  - intent: rejected_application_appeal_provision
+  - action: utter_rejected_application_appeal_provision
+
+- rule: conditional_approval_grant_circumstances
+  steps:
+  - intent: conditional_approval_grant_circumstances
+  - action: utter_conditional_approval_grant_circumstances
+
+- rule: appeal_process_against_executive_committee_decision
+  steps:
+  - intent: appeal_process_against_executive_committee_decision
+  - action: utter_appeal_process_against_executive_committee_decision
+
+- rule: infrastructure_faculty_requirements_handbook
+  steps:
+  - intent: infrastructure_faculty_requirements_handbook
+  - action: utter_infrastructure_faculty_requirements_handbook
+
+- rule: final_approval_rejection_communication
+  steps:
+  - intent: final_approval_rejection_communication
+  - action: utter_final_approval_rejection_communication
+
+- rule: deadline_for_approval_letter_issuance
+  steps:
+  - intent: deadline_for_approval_letter_issuance
+  - action: utter_deadline_for_approval_letter_issuance
+
+- rule: security_deposit_exempted_institutions
+  steps:
+  - intent: security_deposit_exempted_institutions
+  - action: utter_security_deposit_exempted_institutions
+
+- rule: private_universities_security_deposit_exemption
+  steps:
+  - intent: private_universities_security_deposit_exemption
+  - action: utter_private_universities_security_deposit_exemption
+
+- rule: security_deposit_creation_for_new_programme_level
+  steps:
+  - intent: security_deposit_creation_for_new_programme_level
+  - action: utter_security_deposit_creation_for_new_programme_level
+
+- rule: expert_visit_committee_exemption_supernumerary_seats
+  steps:
+  - intent: expert_visit_committee_exemption_supernumerary_seats
+  - action: utter_expert_visit_committee_exemption_supernumerary_seats
+
+- rule: ter_charges_applicable_approval_handbook
+  steps:
+  - intent: ter_charges_applicable_approval_handbook
+  - action: utter_ter_charges_applicable_approval_handbook
+
+- rule: extension_of_approval_processing_ratification
+  steps:
+  - intent: extension_of_approval_processing_ratification
+  - action: utter_extension_of_approval_processing_ratification
+
+- rule: graded_autonomy_eligible_universities_intake_increase
+  steps:
+  - intent: graded_autonomy_eligible_universities_intake_increase
+  - action: utter_graded_autonomy_eligible_universities_intake_increase
+
+- rule: actions_in_complaints_norms_violation
+  steps:
+  - intent: actions_in_complaints_norms_violation
+  - action: utter_actions_in_complaints_norms_violation
+
+- rule: conditions_not_granting_extension_of_approval
+  steps:
+  - intent: conditions_not_granting_extension_of_approval
+  - action: utter_conditions_not_granting_extension_of_approval
+
+- rule: obtaining_extension_of_approval_letter
+  steps:
+  - intent: obtaining_extension_of_approval_letter
+  - action: utter_obtaining_extension_of_approval_letter
+
+- rule: admission_eligibility_criteria
+  steps:
+  - intent: admission_eligibility_criteria
+  - action: utter_admission_eligibility_criteria
+
+- rule: academic_calendar_requirement_universities
+  steps:
+  - intent: academic_calendar_requirement_universities
+  - action: utter_academic_calendar_requirement_universities
+
+- rule: student_enrollment_details_upload_deadline
+  steps:
+  - intent: student_enrollment_details_upload_deadline
+  - action: utter_student_enrollment_details_upload_deadline
+
+- rule: governing_bodies_constitution_private_state_private_university
+  steps:
+  - intent: governing_bodies_constitution_private_state_private_university
+  - action: utter_governing_bodies_constitution_private_state_private_university
+
+- rule: measures_maintaining_high_standard_technical_education
+  steps:
+  - intent: measures_maintaining_high_standard_technical_education
+  - action: utter_measures_maintaining_high_standard_technical_education
+
+- rule: universities_exempted_annual_approval_technical_programs
+  steps:
+  - intent: universities_exempted_annual_approval_technical_programs
+  - action: utter_universities_exempted_annual_approval_technical_programs
+
+- rule: actions_unapproved_technical_program_running
+  steps:
+  - intent: actions_unapproved_technical_program_running
+  - action: utter_actions_unapproved_technical_program_running
+
+- rule: scrutiny_re_scrutiny_conducting_process
+  steps:
+  - intent: scrutiny_re_scrutiny_conducting_process
+  - action: utter_scrutiny_re_scrutiny_conducting_process
+
+  

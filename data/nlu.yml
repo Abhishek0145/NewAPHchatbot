@@ -1,0 +1,1698 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later 
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: general_info_vocational_education
+    examples: |
+      - How does job-focused learning differ from regular studies?
+      - What sets Vocational Education apart from normal school learning?
+      - Explain the difference between Vocational Education and traditional schooling.
+      - How is learning for a specific job different from the regular school system?
+      - What distinguishes Vocational Education from the usual way of studying?
+      - Break down the difference between learning for a career and traditional education.
+      - In simple terms, what makes Vocational Education stand out from the norm?
+      - How is Vocational Education unlike the education we receive in school?
+      - Describe the main difference between learning for a job and the traditional study approach.
+      - What makes Vocational Education unique compared to traditional education?
+
+  - intent: nsqf
+    examples: |
+      - What is the National Skills Qualification Framework (NSQF), and how does it work?
+      - Explain the National Skills Qualification Framework (NSQF) in simple words.
+      - How does the National Skills Qualification Framework (NSQF) benefit us?
+      - Break down the National Skills Qualification Framework (NSQF) in an easy way.
+      - What role does the National Skills Qualification Framework (NSQF) play, and why is it important?
+      - Describe the purpose of the National Skills Qualification Framework (NSQF) in a clear manner.
+      - Provide a simple explanation for the National Skills Qualification Framework (NSQF).
+      - What does National Skills Qualification Framework (NSQF) mean, and why is it necessary?
+      - Explain the National Skills Qualification Framework (NSQF) in a simple and clear manner.
+      - What's the significance of the National Skills Qualification Framework (NSQF)?
+
+  - intent: affiliation_vocational_courses
+    examples: |
+      - How do Vocational Courses gain official recognition, and who grants approval?
+      - Explain the process of affiliating Vocational Courses and identify the involved entities.
+      - Describe the connection and official approval of Vocational Courses.
+      - What legitimizes Vocational Courses, and who bears the responsibility for approval?
+      - Elaborate on the process by which Vocational Courses become connected and approved, and specify the approving authorities.
+      - Clarify the steps involved in making Vocational Courses official and highlight the governing bodies responsible.
+      - What constitutes the affiliation process for Vocational Courses, and who oversees it?
+      - Explain the linkage and official recognition of Vocational Courses.
+      - How do Vocational Courses attain official status, and who plays a crucial role in that process?
+      - Outline the factors that contribute to making Vocational Courses official and identify the parties responsible for affiliation.
+
+  - intent: d_voc_b_voc_programmes
+    examples: |
+      - What unique aspects do D.Voc/B.Voc Programs offer, and how do they incorporate job roles?
+      - Can you elucidate the appealing features of D.Voc/B.Voc Programs and their integration with job opportunities?
+      - In what ways do D.Voc/B.Voc Programs stand out, and how do they intertwine with job roles?
+      - What distinguishes D.Voc/B.Voc Programs, and how do they facilitate job role inclusion?
+      - Can you provide insights into the noteworthy aspects of D.Voc/B.Voc Programs and their alignment with job roles?
+      - What makes D.Voc/B.Voc Programs interesting, and how do they connect with job opportunities?
+      - Share information on the exciting elements that D.Voc/B.Voc Programs offer and their collaboration with job roles.
+      - What features make D.Voc/B.Voc Programs captivating, and how do they accommodate job roles?
+      - Explain the engaging components of D.Voc/B.Voc Programs and their incorporation of job roles.
+      - What contributes to the awesomeness of D.Voc/B.Voc Programs, and how do they correlate with job roles?
+
+  - intent: regulation_fees_vocational_courses
+    examples: |
+      - Who determines the cost of Vocational Courses, and who participates in that decision-making process?
+      - Can you provide information on the entities overseeing the financial aspects of Vocational Courses and their collaborative decision-making?
+      - What entities are responsible for setting the fees for Vocational Courses, and who collaborates in this decision?
+      - Who establishes the pricing for Vocational Courses, and which individuals or groups are involved in this decision?
+      - Can you explain the management of finances for Vocational Courses and the collective decision-making involved?
+      - Who holds authority over determining the fees for Vocational Courses, and who contributes to this decision?
+      - What individuals or teams decide the fees for Vocational Courses, and who actively participates in the decision-making process?
+      - Who regulates the pricing of Vocational Courses, and who else plays a role in this determination?
+      - Can you elaborate on the entities overseeing the fee structure for Vocational Courses and their collaborative decision-making?
+      - Who decides the fees for Vocational Courses, and who assists in making that decision?
+
+  - intent: credit_based_modular_programs
+    examples: |
+      - How do credit-based modular programs operate, and why are they of significance?
+      - Can you provide an explanation of the organizational structure of credit-based modular programs and their importance?
+      - In what manner are credit-based modular programs structured, and why should we consider them important?
+      - What is the significance of credit-based modular programs, and why should we pay attention to them?
+      - Can you elucidate how credit-based modular programs are formulated and their substantial importance?
+      - How are credit-based modular programs structured, and why do they hold significance?
+      - What is the organizational structure of credit-based modular programs, and why are they considered significant?
+      - Can you explain the arrangement of credit-based modular programs and their meaningfulness?
+      - In what way are credit-based modular programs set up, and why are they considered meaningful?
+      - What is the importance of credit-based modular programs, and how are they organized?
+
+  - intent: curriculum_mix_vocational_education
+    examples: |
+      - What is the optimal balance between traditional learning and practical skills in the school curriculum?
+      - Can you provide guidance on the ideal mix of general studies and applied skills in our educational programs?
+      - How should the curriculum strike the right balance between conventional subjects and engaging skills?
+      - What is the recommended blend of core academic studies and stimulating skills in our educational framework?
+      - Can you explain the best combination of traditional education and hands-on skills in the school curriculum?
+      - What constitutes the ideal proportion of conventional learning and exciting skills in our educational schedule?
+      - How much emphasis should be placed on traditional learning versus dynamic skills in our educational courses?
+      - Can you provide insights into the appropriate blend of traditional school subjects and compelling skills in our educational modules?
+      - What is the perfect integration of conventional studies and captivating skills in our educational programs?
+      - How can we strike the right balance between regular subjects and enriching skills in our schoolwork?
+
+  - intent: curriculum_approval_oversight
+    examples: |
+      - Who holds the authority to approve the content of our educational curriculum, and who oversees this process?
+      - Can you provide information on the entities responsible for endorsing our school lessons and the supervisory role in place?
+      - What individuals or groups decide the content of our educational curriculum, and who ensures its appropriateness?
+      - Who grants approval to the content included in our school lessons, and who monitors this decision?
+      - Can you explain the approval process for the content in our educational curriculum and the overseeing authority?
+      - Who provides approval for our school subjects, and who keeps a vigilant eye on this decision?
+      - Can you provide details on who grants approval to our school lessons and the overseeing authority involved?
+      - Who determines the content of our school books, and who oversees this decision-making process?
+      - What individuals or teams are responsible for approving our school lessons, and who monitors this process?
+      - Who approves the content of our school lessons, and who ensures its appropriateness?
+
+  - intent: role_general_education_component
+    examples: |
+      - What role does traditional education play in Vocational Education, and why is it essential?
+      - Can you elaborate on the significance of incorporating general studies in Vocational Education and its purpose?
+      - In what capacity does regular education contribute to Vocational Education, and why is it a crucial component?
+      - Why is traditional school content included in Vocational Education, and what purpose does it serve?
+      - Can you provide insights into the integration of general studies in Vocational Education and its role?
+      - What purpose does regular education serve in Vocational Education, and why is it an integral part of the plan?
+      - Why is there an inclusion of traditional school subjects in Vocational Education, and what role do they play?
+      - Can you shed light on why general studies are part of Vocational Education and their contribution to the curriculum?
+      - What role does traditional education play in Vocational Education, and why is it included in the plan?
+      - Why is there an incorporation of regular school content in Vocational Education, and what value does it bring to the table?
+
+  - intent: emphasis_credit_based_modular_programs
+    examples: |
+      - Why is there a significant emphasis on credit-based learning in Vocational Education, and what makes it noteworthy?
+      - Can you explain the rationale behind focusing on credits in Vocational Education and its importance?
+      - What's the significance of emphasizing credits in Vocational Education, and why is it considered essential?
+      - Why do we prioritize credit-based learning in Vocational Education, and what sets it apart?
+      - Can you provide insights into the importance of credits in Vocational Education and the reasons for its emphasis?
+      - What's the reason behind emphasizing credits in Vocational Education, and why is it valued?
+      - Why is there a considerable focus on credits in Vocational Education, and why does it matter?
+      - Can you articulate the importance of credit-based learning in Vocational Education?
+      - What's the emphasis on credits in Vocational Education all about, and why is it highlighted?
+      - Why is there a preference for credit-based learning in Vocational Education, and what makes it emphasized?
+
+  - intent: focus_skill_development_component_design
+    examples: |
+      - What considerations should be taken into account when designing the curriculum for acquiring skills, and what should be the primary focus?
+      - Can you provide guidance on the essential elements to focus on when planning the curriculum for developing skills?
+      - In designing the learning of skills, what aspects should take precedence, and what should be the focus?
+      - What key factors should be prioritized when planning for the acquisition of skills, and what should be the main focus?
+      - Can you explain the critical components to focus on when designing the curriculum for developing skills?
+      - What should be the primary focus when planning for the acquisition of cool skills, and what are the crucial elements?
+      - How should the learning of fun skills be designed, and what should be the main focus?
+      - Can you provide insights into the essential elements to focus on when planning the curriculum for acquiring cool skills?
+      - What's the main idea for designing the learning of awesome skills, and what should be the focus?
+      - How should the planning for learning fun skills be approached, and what should be the main focus?
+
+  - intent: national_occupational_standards
+    examples: |
+      - In the absence of National Occupational Standards (NOS) for a job, what steps should be taken, and how can the situation be addressed?
+      - Can you provide guidance on what actions to take when National Occupational Standards (NOS) are unavailable for a specific job, and how to resolve the issue?
+      - When job-specific National Occupational Standards (NOS) are missing, what strategies should be employed, and how can the challenge be overcome?
+      - How should one navigate the situation when essential National Occupational Standards (NOS) for a job are not present, and what solutions can be implemented?
+      - Can you explain the course of action to take when the necessary job guidelines (NOS) are absent, and how to manage the situation?
+      - What steps should be taken when the job standards (NOS) are not available, and how can the issue be resolved?
+      - How do we address the challenge if National Occupational Standards (NOS) for a job are not in place, and what remedies can be applied?
+      - Can you provide guidance on what measures to take when job-specific National Occupational Standards (NOS) are unavailable, and how to handle the situation?
+      - When faced with the absence of National Occupational Standards (NOS) for a job, what steps should be taken, and how can the situation be remedied?
+      - Can you explain the recommended course of action when the essential guidelines provided by National Occupational Standards (NOS) are not present for a job?
+
+  - intent: curriculum_emphasis_work_readiness_skills
+    examples: |
+      - What aspects of work readiness skills does the school curriculum focus on, and why is it important?
+      - Can you elaborate on the specific work-related skills emphasized in the school curriculum and their significance?
+      - In the school plan, what key skills are highlighted to prepare students for the workforce, and why is it crucial?
+      - Why is there a significant emphasis on getting ready for work in the school curriculum, and what is the primary focus?
+      - Can you explain the main elements of the school plan that contribute to work readiness skills and their importance?
+      - What is the primary focus of the school plan in developing skills for the workplace, and why is it valued?
+      - Why is there a considerable emphasis on work readiness skills in the school curriculum, and what is the primary focus?
+      - Can you provide insights into the specific aspects of work readiness skills emphasized in the school plan and their contribution?
+      - What elements of the school curriculum are dedicated to developing skills for the workplace, and why is it significant?
+      - How does the school plan contribute to developing skills for the workplace, and why is it emphasized?
+
+  - intent: determining_general_education_component
+    examples: |
+      - How is the decision made regarding the inclusion of traditional subjects in the school curriculum, and what criteria are followed?
+      - Can you explain the process of selecting the regular subjects included in the school curriculum, and what important rules guide this decision?
+      - What factors determine the inclusion of traditional school content in the curriculum, and what rules are considered significant?
+      - How do authorities decide on the selection of regular subjects in the school curriculum, and what rules should be followed?
+      - Can you provide insights into the process of choosing what students study in school and the essential rules that govern this decision?
+      - What considerations guide the decision-making process for determining the regular school content included in the curriculum, and what rules are emphasized?
+      - How is the determination made regarding the inclusion of normal subjects in the school curriculum, and what important rules are followed?
+      - Can you explain the process of deciding what students study in school and the crucial rules that influence this decision?
+      - What criteria are followed in determining the regular school content included in the curriculum, and what rules are considered significant?
+
+  - intent: completing_skill_modules_acquiring_credits
+    examples: |
+      - How do we complete the fun skill modules in Vocational Education and earn credits?
+      - Can you explain the process of finishing the cool skill modules in Vocational Education and acquiring scores?
+      - What's the method for completing the interesting skill modules in Vocational Education and obtaining credit points?
+      - How can we finish the awesome skill modules in Vocational Education and earn points?
+      - Can you describe how to complete the fun skill modules in Vocational Education and gain credits?
+      - How do we complete the exciting skill modules in Vocational Education and earn scores?
+      - What steps should be taken to finish the cool skill modules in Vocational Education and obtain credit points?
+      - How do we complete the interesting skill modules in Vocational Education and earn points?
+      - What's the procedure for doing the awesome skill modules in Vocational Education and getting credit points?
+      - Can you explain the process of completing skill modules in Vocational Education and acquiring credits?
+
+  - intent: credit_transfer_certification
+    examples: |
+      - How do we transfer our earned credits and receive awards in Vocational Education, and what's the process?
+      - Can you explain the procedure for shifting our scores and obtaining prizes in Vocational Education?
+      - What steps should be followed to move our points and receive certificates in Vocational Education?
+      - How can we transfer our earned points and obtain awards in Vocational Education, and what's the way?
+      - Can you describe the process of transferring our points and receiving awards in Vocational Education?
+      - What's the method to move our points and obtain certificates in Vocational Education, and how does it work?
+      - How do we transfer our points and get awards in Vocational Education, and what's the way?
+      - Can you explain the process of shifting our scores and getting prizes in Vocational Education?
+      - What steps should be taken to move our points and obtain certificates in Vocational Education?
+      - How can we transfer our earned points and obtain awards in Vocational Education, and what's the process?
+
+  - intent: certification_levels_information
+    examples: |
+      - Where can we find information about the levels of 'Knowledge and Skill' certifications?
+      - Can you tell me where to look for details on the different levels of 'Knowledge and Skill' certifications?
+      - Where is the place to go if we want to know about the levels of 'Knowledge and Skill' certifications?
+      - Can you explain where we can find details about the 'Knowledge and Skill' certification levels?
+      - Where do we go to get information on the levels of 'Knowledge and Skill' certifications?
+      - Can you tell me where to find details on the different levels of 'Knowledge and Skill' certifications?
+      - Where is the information about the levels of 'Knowledge and Skill' certifications available?
+      - Can you explain where we can find out about the levels of 'Knowledge and Skill' certifications?
+      - Where should we go to get information on the identified certification levels of 'Knowledge and Skill'?
+      - Can you tell me where to find details about the levels of 'Knowledge and Skill' certifications?
+  
+  - intent: general_stream_to_vocational_stream_transition
+    examples: |
+      - How does someone transition from regular school to Vocational classes, and what is the role of SKP/Training Providers?
+      - Can you explain the process for a person in regular school to join Vocational classes and the responsibilities of SKP/Training Providers?
+      - What steps should someone in regular classes take to enter Vocational classes, and what is the involvement of SKP/Training Providers?
+      - How can a person in normal school move into Vocational classes, and what responsibilities do SKP/Training Providers have?
+      - Can you describe the process of someone from regular classes entering Vocational classes and the role of SKP/Training Providers?
+      - How does a person from regular school switch to Vocational classes, and what do SKP/Training Providers do?
+      - Can you explain the process for a person in normal school to join Vocational classes and the responsibilities of SKP/Training Providers?
+      - What steps should someone in regular classes take to enter Vocational classes, and what is the involvement of SKP/Training Providers?
+      - How can a person in normal school move into Vocational classes, and what responsibilities do SKP/Training Providers have?
+      - Can you describe the process of someone from regular classes entering Vocational classes and the role of SKP/Training Providers?
+
+  - intent: movement_between_vocational_and_formal_higher_education_streams
+    examples: |
+      - What options do we have to transition between Vocational classes and regular higher studies, as per the National Education Policy 2020?
+      - Can you explain the choices available for moving between job-oriented classes and regular higher studies, according to the National Education Policy 2020?
+      - What decisions can be made regarding the transition from interesting job classes to normal higher studies, following the National Education Policy 2020?
+      - How much flexibility is there to move between exciting job classes and regular higher studies, according to the National Education Policy 2020?
+      - Can you describe the freedom to switch between fun job classes and regular higher studies, as per the National Education Policy 2020?
+      - What options do we have to transition between Vocational classes and regular higher studies, as per the National Education Policy 2020?
+      - Can you explain the choices available for moving between job-oriented classes and regular higher studies, according to the National Education Policy 2020?
+      - What decisions can be made regarding the transition from interesting job classes to normal higher studies, following the National Education Policy 2020?
+      - How much flexibility is there to move between exciting job classes and regular higher studies, according to the National Education Policy 2020?
+      - Can you describe the freedom to switch between fun job classes and regular higher studies, as per the National Education Policy 2020?
+
+  - intent: noc_process
+    examples: |
+      - How does a school request a No Objection Certificate (NOC), and where should they send the application?
+      - Can you explain the process for a school to apply for a No Objection Certificate (NOC) and the designated submission destination?
+      - What steps should a school follow to ask for a No Objection Certificate (NOC), and where does the request go?
+      - How can a school apply for a No Objection Certificate (NOC), and what is the submission process?
+      - Can you describe the procedure for a school to request a No Objection Certificate (NOC), and where should it be sent?
+      - What steps should a school take to ask for a No Objection Certificate (NOC), and where does the request go?
+      - How can a school apply for a No Objection Certificate (NOC), and what is the submission process?
+      - Can you explain the process for a school to request a No Objection Certificate (NOC) and the designated submission destination?
+      - What steps should a school follow to ask for a No Objection Certificate (NOC), and where does the request go?
+      
+  - intent: prerequisites_for_establishing_technical_institution
+    examples: |
+      - Conditions must be met to establish a new technical institution based on the provided information
+      - Key requirements for founding a new technical institution, as per the content
+      - Outline the necessary criteria for starting a new technical institution according to the content?
+      - What prerequisites are mentioned for initiating a new technical institution in the content?
+      - How can one establish a new technical institution, considering the prerequisites outlined in the content?
+      - What steps and conditions are specified for founding a new technical institution according to the content?
+      - What information is provided regarding the prerequisites for setting up a new technical institution?
+      - List the essential requirements for the establishment of a new technical institution, based on the content
+      - What are the prerequisites for establishing a new technical institution according to the content?
+
+  - intent: significance_of_adhering_to_laws
+    examples: |
+      - What is the significance of adhering to Central, State, and Local Laws as mentioned in the content?
+      - Why is it important to follow Central, State, and Local Laws, as emphasized in the content?
+      - Elaborate on the importance of compliance with Central, State, and Local Laws, as stated in the content
+      - What role does adherence to Central, State, and Local Laws play, according to the content?
+      - Why is there a focus on following Central, State, and Local Laws, as per the content?
+      - In what ways does complying with Central, State, and Local Laws hold significance, as mentioned in the content?
+      - Explain the relevance of sticking to Central, State, and Local Laws, as outlined in the content?
+      - How does the content emphasize the significance of abiding by Central, State, and Local Laws?
+      - What are the reasons behind stressing the importance of adherence to Central, State, and Local Laws, according to the content?
+
+  - intent: role_of_state_government_in_establishment
+    examples: |
+      - What is the role of the State Government/UT in the establishment of technical institutions, according to the content?
+      - How does the State Government or Union Territory contribute to the setup of technical institutions, as mentioned in the content?
+      - What part does the State Government or Union Territory play in the creation of technical institutions, based on the information provided?
+      - Elaborate on the involvement of the State Government or Union Territory in the establishment of technical institutions, as per the content?
+      - Responsibilities does the State Government or Union Territory hold in the formation of technical institutions, according to the content?
+      - How is the State Government or Union Territory engaged in the founding process of technical institutions, according to the content?
+      - Insights into the State Government or Union Territory's role in the establishment of technical institutions, as outlined in the content?
+      - What specific functions does the State Government or Union Territory undertake concerning the setup of technical institutions, based on the content?
+      - In the context of technical institution establishment, what actions are expected from the State Government or Union Territory, according to the content?
+      - Specific duties and contributions of the State Government or Union Territory in the establishment of technical institutions, as per the content?
+
+  - intent: AICTE_handling_applications
+    examples: |
+      - How does AICTE handle applications for the establishment of technical institutions, and what is the role of the National Single Window System (NSWS)?
+      - What is the application process for establishing technical institutions with AICTE?
+      - Can you explain the steps involved in submitting applications to AICTE for new technical institutions?
+      - How does AICTE review and process applications from entities seeking to establish technical institutions?
+      - What role does the National Single Window System (NSWS) play in the AICTE application process for new technical institutions?
+      - Are there specific guidelines for submitting applications to AICTE regarding the establishment of technical institutions?
+      - How does AICTE manage the evaluation and approval of applications for starting technical institutions?
+      - Can you elaborate on the significance of the National Single Window System (NSWS) in the context of AICTE's handling of applications for technical institutions?
+      - What documentation and information are required when applying to AICTE for the creation of new technical institutions?
+      - How does the National Single Window System (NSWS) streamline the application process for aspiring technical institutions under AICTE?
+
+  - intent: time_frame_for_submission_and_consequences
+    examples: |
+      - Is there a specific time frame for the submission of applications, and what are the consequences of missing the deadline?
+      - When is the deadline for submitting applications, and what happens if I miss it?
+      - Is there a set timeframe for application submissions, and are there repercussions for not meeting the deadline?
+      - What is the submission deadline for applications, and what are the consequences of missing it?
+      - When do applications need to be submitted, and what are the implications if the deadline is not met?
+      - Is there a specific time limit for submitting applications, and what are the penalties for missing the deadline?
+      - When is the application deadline, and what happens if I submit after the specified timeframe?
+      - Is there a particular time frame for application submissions, and what are the repercussions if the deadline is not adhered to?
+      - When is the deadline for submitting applications, and what are the potential consequences for missing it?
+      - What is the timeframe for application submissions, and what are the outcomes of missing the specified deadline?
+
+  - intent: types_of_programs_for_approval
+    examples: |
+      - What types of programs can a new technical institution seek approval for?
+      - What are the various programs that a recently established technical institution can seek approval for?
+      - Which kinds of courses can a new technical institution apply for approval?
+      - What approval is needed for programs in a recently established technical institution?
+      - Can you provide information on the approval process for programs in a newly formed technical institution?
+      - What types of educational programs can a recently established technical institute pursue approval for?
+      - What is the process for seeking approval for different programs in a newly established technical institution?
+      - Could you outline the variety of programs that a new technical institution can apply for approval?
+      - What steps are involved in seeking approval for educational programs in a newly established technical institute?
+      - What categories of courses can a recently formed technical institution seek approval for?
+
+  - intent: eligibility_criteria_for_promoters
+    examples: |
+      - What are the eligibility criteria for promoters wishing to establish a new technical institution?
+      - What qualifications are required for individuals interested in becoming promoters for a new technical institution?
+      - Can you outline the prerequisites for individuals aspiring to be promoters in the establishment of a new technical institution?
+      - What are the necessary qualifications and criteria for individuals looking to become promoters in the setup of a new technical institution?
+      - Could you provide details on the eligibility requirements for those wishing to be promoters for a newly established technical institution?
+      - What qualifications must potential promoters possess when establishing a new technical institution?
+      - Are there specific criteria or qualifications that individuals need to meet to become promoters for a new technical institution?
+      - Can you share information on the eligibility criteria for promoters aiming to set up a new technical institution?
+      - What educational or professional qualifications are necessary for individuals interested in becoming promoters for a new technical institution?
+      - Could you elaborate on the requirements and criteria for individuals aspiring to be promoters for a new technical institution?
+
+  - intent: ineligibility_of_certain_programs
+    examples: |
+      - Why are institutions applying for the introduction of NRI/OCI/FN/Children of Indian Workers in the Gulf Countries/Twinning/Fellow Programs not eligible?
+      - What makes institutions ineligible when they apply for introducing NRI/OCI/FN/Children of Indian Workers in the Gulf Countries?
+      - Why do institutions face ineligibility when seeking to introduce NRI/OCI/FN/Children of Indian Workers in the Gulf Countries?
+      - What are the reasons behind institutions being deemed ineligible for programs like NRI/OCI/FN/Children of Indian Workers in Gulf Countries?
+      - Can you elaborate on the disqualification of institutions applying for NRI/OCI/FN/Children of Indian Workers in the Gulf Countries?
+      - What factors contribute to the ineligibility of institutions applying for NRI/OCI/FN/Children of Indian Workers in Gulf Countries or Twinning/Fellow Programs?
+      - Could you explain the criteria that lead to institutions not meeting eligibility when applying for NRI/OCI/FN/Children of Indian Workers in Gulf Countries?
+      - What are the specific requirements that result in institutions being ineligible for programs such as NRI/OCI/FN/Children of Indian Workers in the Gulf Countries?
+      - How are institutions disqualified when applying for the introduction of NRI/OCI/FN/Children of Indian Workers in the Gulf Countries?
+      - What specific conditions lead to the non-eligibility of institutions applying for NRI/OCI/FN/Children of Indian Workers in Gulf Countries or Twinning/Fellow Programs?
+
+  - intent: Ministry_of_Education_schemes_for_establishment
+    examples: |
+      - Can you provide details on Ministry of Education (MoE) schemes associated with the establishment of technical institutions?
+      - What are the specific schemes outlined by the Ministry of Education (MoE) for setting up technical institutions?
+      - Could you elaborate on the Ministry of Education (MoE) programs supporting the establishment of technical institutions?
+      - What schemes under the Ministry of Education (MoE) are relevant for those looking to establish technical institutions?
+      - How does one go about seeking approval under the Ministry of Education (MoE) schemes for establishing technical institutions?
+      - Can you outline the process for obtaining approval under the Ministry of Education (MoE) schemes for a new technical institution?
+      - What steps are involved in seeking approval from the Ministry of Education (MoE) for establishing a technical institution under their schemes?
+      - Which specific Ministry of Education (MoE) initiatives focus on the approval process for new technical institutions, and how can one apply for them?
+      - What are the guidelines and procedures for approval under Ministry of Education (MoE) schemes when establishing technical institutions?
+
+  - intent: consequences_of_not_shifting_location
+    examples: |
+      - What happens if an institution fails to relocate to its permanent location within the stipulated two-year period as per AICTE schemes?
+      - What steps does AICTE take when an institution approved under the specified schemes does not make the required shift to its permanent location within the given two-year timeframe?
+      - What are the consequences for an institution if it doesn't move to its permanent location within the prescribed two years under AICTE schemes?
+      - In the case of an institution approved under relevant AICTE schemes, what measures are taken if it doesn't complete the relocation to its permanent location within the designated two-year period?
+      - How does AICTE handle instances where an institution, approved under specific schemes, fails to shift to its permanent location within the mandated two-year period?
+      - What actions are taken by AICTE when an institution approved under the mentioned schemes doesn't adhere to the requirement of shifting to its permanent location within two years?
+      - What steps does AICTE follow when an institution, previously approved under specified schemes, does not complete the shift to its permanent location within the given two-year timeframe?
+      - If an institution approved under the mentioned schemes fails to relocate within two years, what measures does AICTE implement?
+      - What consequences does an institution face if it doesn't comply with the requirement of shifting to its permanent location within the stipulated two-year period under AICTE schemes?
+
+  - intent: existing_institutions_approval_by_AICTE
+    examples: |
+      - When can institutions approved by other regulatory bodies approach AICTE for initial approval?
+      - Under what conditions may institutions already sanctioned by different regulatory bodies apply for AICTE approval for the first time?
+      - What are the scenarios in which existing institutions, endorsed by other regulatory bodies, are eligible to seek initial approval from AICTE?
+      - In what situations can institutions, previously sanctioned by regulatory bodies, seek their first-time approval from AICTE?
+      - When is it appropriate for institutions with approvals from other regulatory bodies to seek their first-time approval from AICTE?
+      - Under what circumstances can institutions already approved by different regulatory bodies approach AICTE for their initial approval?
+      - What are the specific instances when institutions, sanctioned by other regulatory bodies, can seek AICTE approval for the first time?
+      - When are institutions, previously approved by different regulatory bodies, allowed to seek initial approval from AICTE?
+      - What conditions govern institutions with approvals from other regulatory bodies seeking approval from AICTE for the first time?
+
+  - intent: additional_charges_for_extra_committees
+    examples: |
+      - What are the potential extra fees associated with unique circumstances like an additional Scrutiny Committee during the application process?
+      - Are there any supplementary charges for exceptional situations, like requesting an additional Scrutiny Committee or an Expert Visit Committee?
+      - How much might an applicant be charged for extraordinary circumstances, such as the formation of an additional Scrutiny Committee or Expert Visit Committee?
+      - Are there additional costs for situations like having to involve an extra Scrutiny Committee or organizing an Expert Visit Committee?
+      - What kind of fees can an applicant expect in cases of extraordinary circumstances, such as the need for an additional Scrutiny Committee or an Expert Visit Committee?
+      - Could you outline the potential financial implications for applicants in cases of extraordinary circumstances, such as an extra Scrutiny Committee or Expert Visit Committee?
+      - In situations requiring an extra Scrutiny Committee or an Expert Visit Committee, are there specific charges or fees that an applicant needs to be aware of?
+      - How does the fee structure change for applicants facing exceptional circumstances, like requesting an additional Scrutiny Committee or an Expert Visit Committee?
+      - Are there specific charges associated with unique situations, like those requiring an additional Scrutiny Committee or Expert Visit Committee?
+
+  - intent: consequences_of_not_paying_TER_within_deadline
+    examples: |
+      - What happens if I miss the deadline for paying TER charges?
+      - Can you tell me the repercussions of not meeting the TER charges deadline?
+      - What are the consequences if I don't pay TER charges on time?
+      - What happens when TER charges aren't paid within the specified deadline?
+      - Are there penalties for late payment of TER charges?
+      - Can you explain the impact of missing the TER charges payment deadline?
+      - What are the repercussions of failing to pay TER charges by the due date?
+      - Are there any negative effects if I don't pay my TER charges on time?
+      - Could you clarify what happens if I neglect to pay TER charges within the deadline?
+
+  - intent: importance_of_online_application_through_NSWS
+    examples: |
+      - Why is it crucial to utilize the NSWS platform for online applications when seeking initial approval from AICTE as an institution?
+      - What advantages does submitting an online application through NSWS offer to institutions applying for AICTE approval for the first time?
+      - Can you elaborate on the significance of institutions opting for the NSWS platform when making their initial approval applications to AICTE?
+      - How does the online application process through NSWS contribute to the efficiency of institutions seeking approval from AICTE for the first time?
+      - What benefits do institutions gain by choosing the NSWS platform for their initial approval applications to AICTE?
+      - In what ways does submitting an online application through NSWS enhance the approval process for institutions seeking recognition from AICTE for the first time?
+      - What unique features of the NSWS platform make it advantageous for institutions applying for AICTE approval for the first time?
+      - How does the NSWS platform streamline the application process for institutions seeking initial approval from AICTE?
+      - Can you explain the role of the NSWS platform in simplifying the approval-seeking process for institutions approaching AICTE for the first time?
+
+  - intent: AICTE_handling_refund_or_excess_payment
+    examples: |
+      - Can you explain the AICTE process for managing refunds or excess payments for eligible institutions?
+      - How are refunds handled by AICTE in cases where institutions are eligible for them?
+      - What is the procedure followed by AICTE to address excess payments for eligible institutions?
+      - Can you provide details on AICTE's approach to managing refunds for institutions that qualify?
+      - How does AICTE manage excess payments or refunds for institutions that meet the eligibility criteria?
+      - What steps does AICTE take to handle refunds or excess payments for eligible institutions?
+      - Could you elaborate on how AICTE deals with excess payments or refunds for institutions that are eligible?
+      - What is the policy of AICTE regarding the refund process for eligible institutions?
+      - How does AICTE process excess payments or refunds for institutions meeting the eligibility criteria?
+
+  - intent: USER_ID_allotment_and_associated_cost
+    examples: |
+      - How do I obtain a USER ID for a new application to establish a Technical Institution, and is there any cost involved?
+      - Can you provide details on acquiring a USER ID for a new application in the process of setting up a Technical Institution? Are there associated costs?
+      - What steps are involved in obtaining a USER ID for a new application for a Technical Institution, and can you shed light on any related costs?
+      - How can I get a USER ID for the application to establish a new Technical Institution, and what fees are associated with this process?
+      - What is the procedure for obtaining a USER ID when applying for the establishment of a Technical Institution, and are there any charges involved?
+      - Could you explain the process of acquiring a USER ID for a new application to set up a Technical Institution, including details on associated costs?
+      - What are the steps for obtaining a USER ID for a new application in the context of establishing a Technical Institution, and is there a fee for this?
+      - Can you guide me through the process of securing a USER ID for a new application to establish a Technical Institution and provide insights into any costs involved?
+      - How do I go about obtaining a USER ID for a new application related to setting up a Technical Institution, and what is the cost structure associated with it?
+
+  - intent: procedure_for_password_recovery_and_charges
+    examples: |
+      - How can an existing institution recover a forgotten password, and is there a specific procedure to follow?
+      - What steps should an institution take if they've lost access to their password? Is there a specific process in place?
+      - In the event of an existing institution forgetting their password, what is the protocol for obtaining a new one?
+      - If a registered institution forgets its password, what is the recommended course of action to reset it?
+      - How does an established institution go about recovering a lost password, and are there any associated charges for this process?
+      - What is the official procedure for an existing institution to recover or reset a forgotten password?
+      - If a registered institution can't access their account due to a forgotten password, what steps should they follow?
+      - Is there a specific process for an existing institution to regain access to their account in case of a forgotten password?
+      - What are the steps an institution needs to take to retrieve a lost password, and are there any fees associated with this recovery process?
+
+  - intent: TER_charges_calculation_and_annual_increase
+    examples: |
+      - What is the method for calculating TER Charges for various institution types, and is there a standardized formula?
+      - Can you explain the process of determining TER Charges for different categories of institutions?
+      - How are TER Charges computed for diverse institution types, and are there distinct calculation methods?
+      - Is there a specific formula or guideline for calculating TER Charges based on the type of institution?
+      - What factors contribute to the calculation of TER Charges, and do they differ for each institution category?
+      - Could you provide insights into the computation of TER Charges, considering the unique characteristics of various institution types?
+      - Are there specific considerations or variables taken into account when calculating TER Charges for different institutions?
+      - How is the annual increase percentage for TER Charges determined, and are there any consistent factors influencing this rate?
+      - What criteria are used to assess the annual increase percentage for TER Charges across various institution types?
+
+  - intent: eligibility_for_TER_charge_refund
+    examples: |
+      - When can an applicant get a refund for TER Charges?
+      - What conditions make an applicant eligible for a refund of TER Charges?
+      - Under what situations is an applicant entitled to a TER Charges refund?
+      - What makes an applicant qualify for a refund of TER Charges?
+      - In what scenarios can an applicant receive a refund for TER Charges?
+      - When does an applicant become eligible for a TER Charges refund?
+      - What circumstances lead to an applicant being refunded TER Charges?
+      - Under what conditions can an applicant claim a refund for TER Charges?
+      - What criteria determine an applicant's eligibility for a TER Charges refund?
+
+  - intent: precautions_for_data_entry_and_submission
+    examples: |
+      - How can applicants ensure the security of their data during the online application process?
+      - What safety measures should applicants consider when entering and submitting data online?
+      - What steps can applicants take to protect their information while completing the online application?
+      - How to safeguard personal information during the online application submission?
+      - What precautions are recommended for data security when applying online?
+      - Are there specific guidelines for secure data entry and submission in online applications?
+      - What security tips should applicants follow when entering sensitive details in an online application?
+      - How can applicants prevent potential data breaches during the online application process?
+      - Are there best practices for ensuring the privacy of personal information during online application submissions?
+      - What safety measures are advisable for applicants to take when inputting and submitting data online?
+
+  - intent: significance_of_Digital_Signature_Certificate
+    examples: |
+      - What is the significance of institutions needing to provide applications with a Digital Signature Certificate (DSC)?
+      - Could you explain the necessity for institutions to include a Digital Signature Certificate (DSC) when submitting applications?
+      - What role does a Digital Signature Certificate (DSC) play in the application submission process for institutions?
+      - Why is it a requirement for institutions to attach a Digital Signature Certificate (DSC) when applying for approval?
+      - Can you elaborate on the reason behind institutions being obligated to use a Digital Signature Certificate (DSC) in their application submissions?
+      - What purpose does the inclusion of a Digital Signature Certificate (DSC) serve for institutions during the application process?
+      - Could you provide insights into the mandatory nature of institutions submitting applications with a Digital Signature Certificate (DSC)?
+      - What benefits or security measures does a Digital Signature Certificate (DSC) offer, making it mandatory for institutions in their application submissions?
+      - How does the use of a Digital Signature Certificate (DSC) enhance the application submission process for institutions, leading to its mandatory requirement?
+
+  - intent: significance_of_Affidavit_2_and_consequences_of_false_info
+    examples: |
+      - Can you explain the importance of Affidavit 2 in AICTE processes, and what consequences may arise for providing incorrect information?
+      - What role does Affidavit 2 play in AICTE, and what measures can AICTE take if the information provided is inaccurate?
+      - Why is Affidavit 2 significant in AICTE procedures, and what are the repercussions for submitting false details?
+      - Could you elaborate on the relevance of Affidavit 2 within AICTE, and what actions might be taken for misinformation?
+      - What is the purpose of Affidavit 2 in AICTE, and what penalties could be imposed for misinformation?
+      - How does Affidavit 2 impact AICTE processes, and what steps can AICTE take if false information is detected?
+      - Can you outline the importance of Affidavit 2 in AICTE, and what consequences applicants might face for providing inaccurate details?
+      - What significance does Affidavit 2 hold in AICTE, and what actions may be initiated if false information is identified?
+      - Why is it crucial to understand Affidavit 2 in AICTE, and what measures can AICTE implement in case of misleading information?
+
+  - intent: mandatory_submission_to_State_Government_and_affiliating_University
+    examples: |
+      - What is the significance of submitting the application to both the State Government/UT and the affiliating University/Board?
+      - Why do applicants need to provide a copy of the application to both the State Government/UT and the affiliating University/Board?
+      - What role does the State Government/UT play in the application process for new institutions?
+      - How does submitting the application to the affiliating University/Board impact the approval process?
+      - Can you explain the necessity of dual submission to both the State Government/UT and affiliating University/Board during the application process?
+      - In the establishment of new institutions, why is it mandatory to share the application with both the State Government/UT and affiliating University/Board?
+      - The reasons behind applicants being required to send their applications to both the State Government/UT and the affiliating University/Board
+      - How does the submission of applications to both the State Government/UT and the affiliating University/Board contribute to the approval process for new institutions?
+
+  - intent: timeline_for_views_from_State_Government_and_affiliating_University
+    examples: |
+      - How long does it take for the State Government or Union Territory to provide feedback on the application?
+      - What's the typical duration for the State Government or UT to share their opinions on the application process?
+      - Can you provide information on the timeframe for the State Government or UT to respond to the application?
+      - How much time does the affiliating University or Board usually take to forward their views on the application?
+      - Expected timeline for the State Government or UT to convey their thoughts on the submitted application
+      - How soon can we expect feedback from the affiliating University or Board regarding the application?
+      - What's the anticipated duration for the State Government or UT to review and respond to the application?
+      - Can you share insights into the general timeline for the affiliating University or Board to provide their input on the application?
+
+  - intent: lifting_of_moratorium_for_new_institutions
+    examples: |
+      - Why was the moratorium lifted for establishing new engineering and technology institutions starting from the Academic Year 2023-24?
+      - What does the lifting of the moratorium mean for the establishment of new engineering and technology institutions in the academic year 2023-24?
+      - What led to the decision to lift the moratorium for the creation of new institutions in the field of engineering and technology, starting from the academic year 2023-24?
+      - How will the lifting of the moratorium impact the landscape of engineering and technology institutions in the academic year 2023-24?
+      - What factors influenced the decision to lift the moratorium on establishing new engineering and technology institutions for the Academic Year 2023-24?
+      - Elaborate on the implications of lifting the moratorium for the establishment of new institutions in engineering and technology in the upcoming academic year 2023-24
+      - What changes or developments prompted the decision to remove the moratorium on establishing new engineering and technology institutions starting in the Academic Year 2023-24?
+      - In what ways will the lifting of the moratorium for establishing new institutions in engineering and technology impact the educational landscape for the Academic Year 2023-24?
+
+  - intent: requirements_and_eligibility_for_Promoter_Trust_Society_Company
+    examples: |
+      - Requirements and eligibility criteria for a Promoter Trust/Society/Company to establish a new technical institution
+      - What prerequisites must a Promoter Trust, Society, or Company fulfill to establish a new technical institution?
+      - Outline the eligibility criteria for a Promoter Trust, Society, or Company looking to establish a new technical institution
+      - Requirements for a Promoter Trust/Society/Company to establish a new technical Institution?
+      - What criteria must be met by a Promoter Trust, Society, or Company to be eligible for establishing a new technical institution?
+      - List the mandatory requirements and eligibility conditions for a Promoter Trust, Society, or Company planning to launch a new technical institution
+      - What documentation and conditions does a Promoter Trust, Society, or Company need to fulfill when establishing a new technical institution?
+      - Are there specific prerequisites that a Promoter Trust, Society, or Company must meet to be considered eligible for establishing a new technical institution?
+      - Key qualifications and conditions for a Promoter Trust, Society, or Company wanting to establish a new technical institution
+      - Outline the essential criteria that a Promoter Trust, Society, or Company should adhere to in order to establish a new technical institution
+
+  - intent: minimum_funds_required_for_proof_of_operational_expenses
+    examples: |
+      - Minimum financial commitment needed to cover operational expenses for the proposed programs in a technical institution
+      - Can you provide details on the required minimum funding to support operational expenses for the different programs proposed by a technical institution?
+      - What is the specified amount of funds needed to demonstrate operational viability for the proposed programs in a technical institution?
+      - How much financial proof is required to cover operational costs for each of the proposed programs in a technical institution?
+      - Minimum funds necessary to ensure the operational sustainability of the various programs outlined by a technical institution
+      - Can you elaborate on the minimum budgetary requirements needed as evidence for operational expenses across the proposed programs in a technical institution?
+      - What is the anticipated minimum funding benchmark for operational costs associated with the proposed programs in a technical institution?
+      - How much financial backing is required as proof of operational capability for the diverse programs suggested by a technical institution?
+      - Outline the minimum financial commitments needed to substantiate operational expenses for the proposed programs in a technical institution
+      - What are the specified funds required to substantiate the operational costs for the programs proposed by a technical institution?
+
+  - intent: building_plan_requirements_and_approval
+    examples: |
+      - What specifications should be included in the building plans for a technical institution, and which authority is responsible for approving them?
+      - Outline the necessary elements in the building plans for a technical institution
+      - What are the key components that should be incorporated into the building plans for a technical institution?
+      - Could you detail the building plan prerequisites for a technical institution, and which organization is in charge of endorsing these plans?
+      - Who holds the authority to grant approval for the building plan?
+      - Provide insights into the building plan requirements for a technical institution
+      - What are the specific criteria for building plans in a technical institution, and which governing authority must provide approval?
+      - Who is authorized to give approval for these plans for a technical institution?
+      - Can you outline the building plan requirements for a technical institution, and specify the approving authority for these plans?
+
+  - intent: qualifications_required_for_head_of_technical_institution
+    examples: |
+      - Who should be named as the head of a technical institution, and what qualifications are required (section 1.5.1d)?
+      - What are the qualifications needed for someone to become the head of a technical institution?
+      - Who should be appointed as the head of a technical institution, and what educational background is ideal for this role?
+      - What qualifications should a person have to be considered for the position of head in a technical institution?
+      - Can you provide information on the qualifications required for the head of a technical institution?
+      - Who is eligible to be the head of a technical institution, and what academic credentials are necessary?
+      - What are the prerequisites for someone to be appointed as the head of a technical institution?
+      - Could you share details on the qualifications needed for the head of a technical institution?
+      - Who should be chosen as the head of a technical institution, and what educational qualifications are essential for the role?
+
+  - intent: existing_institutions_applying_for_closure_and_starting_new_institution
+    examples: |
+      - Is it possible for institutions in the process of closure to simultaneously apply to establish a new technical institution on the same premises during the same academic year?
+      - Can institutions undergoing closure procedures also submit applications for initiating a new technical institution at the same location within the same academic year?
+      - Is there a provision for institutions currently in the closure process to seek approval for starting a new technical institution at the same premises in the same academic year?
+      - Are there any restrictions for institutions seeking closure to concurrently apply for the establishment of a new technical institution on the same premises in the same academic year?
+      - Can institutions that have initiated closure proceedings also pursue approval for launching a new technical institution within the same premises during the same academic year?
+      - Is it permissible for institutions applying for closure to simultaneously apply for the creation of a new technical institution at the same location within the same academic year?
+      - Are there any regulations allowing institutions in the closure process to apply for starting a new technical institution on the same premises in the same academic year?
+      - Can institutions in the process of closure put forward applications for commencing a new technical institution at the same location within the same academic year?
+      - Is it allowed for institutions undergoing closure to apply for the establishment of a new technical institution at the same premises in the same academic year?
+
+  - intent: outcomes_of_approval_under_section_1.5.2a
+    examples: |
+      - What are the next steps after the approval of the application to start a new technical institution?
+      - Once the application for a new technical institution is approved, what follows in the process?
+      - What changes or preparations are required after the successful approval of a new technical institution application?
+      - Could you provide insights into the process that unfolds after the approval of a new technical institution application?
+      - In the event of approval, what procedures need to be undertaken for initiating the new technical institution?
+      - How does the landscape change for a new technical institution after receiving approval for its establishment?
+      - What is the timeline for implementation following the approval of the application to start a new technical institution?
+      - Are there specific requirements or protocols to be followed immediately after the approval of a new technical institution application?
+      - After the approval, what are the considerations and actions needed to kickstart operations for the new technical institution?
+
+  - intent: fund_position_requirements_in_terms_of_FDRs_and_bank_accounts
+    examples: |
+      - How does the applicant's financial standing look concerning Fixed Deposits (FDRs) and bank accounts?
+      - Can you provide details about the applicant's financial position, particularly in terms of Fixed Deposits (FDRs) and bank accounts?
+      - What is the status of the applicant's funds when considering Fixed Deposits (FDRs) and bank accounts?
+      - Could you share information on the applicant's financial health, specifically regarding Fixed Deposits (FDRs) and bank accounts?
+      - What does the applicant's fund position look like in Fixed Deposits (FDRs) and bank accounts?
+      - Can you elaborate on the applicant's financial stability, especially in relation to Fixed Deposits (FDRs) and bank accounts?
+      - How are the applicant's funds structured in terms of Fixed Deposits (FDRs) and bank accounts?
+      - What is the applicant's financial status concerning Fixed Deposits (FDRs) and bank accounts?
+      - Could you provide insights into the applicant's financial portfolio, specifically focusing on Fixed Deposits (FDRs) and bank accounts?
+
+  - intent: requirements_for_Government_Government-Aided_Institutions_Central_State_Universities
+    examples: |
+      - What are the budgetary prerequisites for Government and Government-Aided Institutions in terms of land and built-up area?
+      - Can you outline the minimal budget provision and land/built-up area requirements for Central and State Universities?
+      - What are the mandatory budget allocations and land/built-up area criteria for Government-Aided Institutions at both Central and State levels?
+      - Could you provide details on the minimum budget provisions and land/built-up area specifications for Central and State Government educational institutions?
+      - What is the stipulated budget provision and land/built-up area needed for Government and Government-Aided institutions, particularly in Central and State Universities?
+      - Can you elaborate on the essential financial allocations and land/built-up area prerequisites for Government and Government-Aided educational institutions?
+      - What are the minimum budgetary requirements and land/built-up area specifications for Central and State Government institutions, particularly in the educational sector?
+      - Could you provide insights into the mandatory budget provisions and land/built-up area criteria for Government and Government-Aided institutions, specifically in Central and State Universities?
+      - What are the baseline financial allocations and land/built-up area expectations for Government, Government-Aided, and Central/State University institutions?
+
+  - intent: restrictions_on_use_of_names_for_new_technical_institution
+    examples: |
+      - Are there limitations on the names of new technical institutions, specifically regarding the use of abbreviations and certain words?
+      - What rules govern the naming of a new technical institution, especially when it comes to abbreviations and specific words?
+      - Can you provide guidelines on the permissible use of names, including abbreviations and specific words, for a newly established technical institution?
+      - What restrictions exist for naming a new technical institution, particularly in relation to the use of abbreviations and specific words?
+      - Are there any regulations or constraints on the choice of names for a newly formed technical institution, especially concerning abbreviations and certain terms?
+      - Could you elaborate on the constraints regarding the naming conventions for a recently established technical institution, with a focus on abbreviations and particular words?
+      - What are the considerations and limitations regarding the names, including abbreviations and certain words, for a new technical institution?
+      - Are there specific guidelines or restrictions concerning the names of new technical institutions, particularly addressing the use of abbreviations and specific language?
+      - Can you provide insights into the naming policies for new technical institutions, highlighting any constraints related to abbreviations and certain terminology?
+
+  - intent: differentiation_of_existing_institutions_with_same_name_within_state
+    examples: |
+      - What strategies can institutions with identical names in a state employ to distinguish themselves from one another?
+      - How can educational institutions sharing the same name in a state establish unique identities to avoid confusion?
+      - What steps should be taken by similarly named institutions within a state to set themselves apart in terms of branding and recognition?
+      - In a state where institutions share identical names, what approaches can be adopted for differentiation and individuality?
+      - How do educational entities with the same name in a state create distinct identities to stand out in the local landscape?
+      - What measures can institutions with the same name within a state implement to ensure they are easily distinguishable and recognized?
+      - What strategies exist for educational institutions sharing identical names within a state to differentiate themselves effectively?
+      - How can similarly named institutions in a state strategically position themselves to avoid confusion and enhance their uniqueness?
+      - What actions should institutions with the same name in a state take to create clear distinctions and enhance their individual profiles?
+    
+   - intent: government_support_public_universities
+    examples: |
+      - How does the Government of India and State Governments contribute to the support of Public Universities in India?
+      - Can you elaborate on the involvement of the Government of India and State Governments in aiding Public Universities in India?
+      - What contributions do the Government of India and State Governments make to assist Public Universities in India?
+      - In what ways do the Government of India and State Governments support Public Universities across the country?
+      - Could you provide insights into the support mechanisms provided by the Government of India and State Governments for Public Universities in India?
+      - What is the collaborative role of the Government of India and State Governments in backing Public Universities in India?
+      - How do Public Universities in India benefit from the support of both the Government of India and State Governments?
+      - Could you explain how the Government of India and State Governments play a role in the support of Public Universities within the country?
+
+  - intent: private_universities_support
+    examples: |
+      - What is the primary support structure for Private Universities in India, and which entities are typically engaged in providing this support?
+      - Could you elaborate on the main sources of support for Private Universities in India and the common entities associated with this support?
+      - In terms of support, what are the primary channels for Private Universities in India, and which entities are usually active in offering such support?
+      - What are the predominant means of support for Private Universities in India, and which entities are typically part of the support network?
+      - Can you outline the primary support mechanisms for Private Universities in India and identify the usual entities involved in supporting them?
+      - Regarding support, what are the main avenues for Private Universities in India, and which entities are commonly instrumental in providing support?
+      - How do Private Universities in India primarily receive support, and which entities are usually involved in extending this support?
+      - Could you shed light on the main entities that play a role in supporting Private Universities in India and the key methods of support they offer?
+
+  - intent: university_recognition_regulatory_body
+    examples: |
+      - Which regulatory body is responsible for recognizing Universities in India, and what legislative framework oversees this recognition?
+      - Can you identify the regulatory body in India tasked with recognizing Universities and the legislation that governs the entire recognition process?
+      - In India, which regulatory body oversees the recognition of Universities, and what legislative guidelines control this recognition?
+      - What is the regulatory body in India that plays a role in the recognition of Universities, and which legislation provides the guidelines for this recognition?
+      - Could you clarify which regulatory body is involved in recognizing Universities in India and the legislative framework that dictates this recognition?
+      - In terms of recognition, which regulatory body operates in India, and what legislation serves as the governing framework for this process?
+      - What regulatory body in India is responsible for the recognition of Universities, and which legislation forms the basis for this recognition?
+      - Can you elaborate on the regulatory body in India that recognizes Universities and the legislation that governs the criteria for this recognition?
+
+  - intent: central_vs_state_universities
+    examples: |
+      - How do Central Universities differ from State Universities in terms of their establishment and oversight?
+      - Could you outline the distinctions between Central Universities and State Universities regarding their founding and oversight?
+      - In what ways do Central Universities and State Universities differ in terms of their establishment and the oversight they undergo?
+      - Can you provide insights into the differences between Central Universities and State Universities concerning how they are established and overseen?
+      - What are the distinguishing factors between Central Universities and State Universities regarding their founding and the oversight they experience?
+      - How do Central Universities and State Universities vary in terms of their establishment and the mechanisms of oversight?
+      - Could you elaborate on the differences between Central Universities and State Universities in their establishment and the oversight they are subjected to?
+      - In terms of establishment and oversight, what sets Central Universities apart from State Universities, and how are they distinct from each other?
+
+  - intent: constituent_college_significance
+    examples: |
+      - Could you explain the importance of the term "Constituent College" within the framework of a University in India?
+      - What does the term "Constituent College" signify in the context of a University in India, and why is it relevant?
+      - In the context of a University in India, could you elaborate on the significance of the term "Constituent College"?
+      - How is the term "Constituent College" meaningful within the structure of a University in India?
+      - Can you shed light on the importance and role of the term "Constituent College" in the context of a University in India?
+      - In the context of a University in India, what is the significance attached to the term "Constituent College"?
+      - What role does the term "Constituent College" play in the operational framework of a University in India?
+      - Could you provide insights into why the term "Constituent College" is essential within the context of a University in India?
+
+  - intent: deemed_university_declaration_process
+    examples: |
+      - Can you describe the process through which Institutions Deemed to be University are designated, and what involvement does the University Grants Commission (UGC) have in this declaration?
+      - What steps are taken in the designation of Institutions Deemed to be University, and how does the University Grants Commission (UGC) contribute to this process?
+      - How is the designation of Institutions Deemed to be University carried out, and to what extent does the University Grants Commission (UGC) participate in this declaration?
+      - Could you outline the procedures involved in designating Institutions Deemed to be University and the role played by the University Grants Commission (UGC)?
+      - In designating Institutions Deemed to be University, what specific processes are followed, and what influence does the University Grants Commission (UGC) exert in this regard?
+      - What methods are employed in designating Institutions Deemed to be University, and how does the University Grants Commission (UGC) factor into this declaration?
+      - Can you explain the criteria and steps for designating Institutions Deemed to be University, including the role of the University Grants Commission (UGC)?
+      - How does the designation process for Institutions Deemed to be University unfold, and what functions does the University Grants Commission (UGC) perform in this declaration?
+
+  - intent: state_private_universities_characteristic
+    examples: |
+      - What sets State Private Universities apart in terms of their establishment, recognition, and support?
+      - Could you highlight the defining features of State Private Universities concerning their establishment, recognition, and support?
+      - In terms of establishment, recognition, and support, what is the distinctive characteristic of State Private Universities?
+      - What differentiates State Private Universities in their establishment, recognition, and the support they receive?
+      - Can you pinpoint the defining characteristic of State Private Universities related to their establishment, recognition, and support?
+      - How are State Private Universities uniquely characterized in their establishment, recognition, and the support they garner?
+      - What makes State Private Universities stand out in terms of their establishment, recognition, and the kind of support they receive?
+      - Could you elaborate on the specific features that define State Private Universities in their establishment, recognition, and the support they obtain?
+
+  - intent: technical_universities_aicte_norms
+    examples: |
+      - According to AICTE, what norms and standards must Technical Universities adhere to in terms of infrastructure, faculty, and other aspects?
+      - Can you provide insights into the norms and standards set by AICTE that Technical Universities are obligated to maintain, particularly concerning infrastructure, faculty, and related factors?
+      - What are the specific norms and standards outlined by AICTE that Technical Universities are expected to maintain, covering aspects like infrastructure and faculty?
+      - Could you elaborate on the AICTE-prescribed norms and standards that Technical Universities are required to uphold, with a focus on infrastructure, faculty, and other relevant factors?
+      - In accordance with AICTE regulations, what are the stipulated norms and standards for Technical Universities, particularly in terms of infrastructure, faculty, and related considerations?
+      - What guidelines and standards does AICTE set for Technical Universities, specifically addressing requirements related to infrastructure, faculty, and other factors?
+      - Can you outline the norms and standards mandated by AICTE that Technical Universities must follow, particularly concerning infrastructure, faculty, and similar criteria?
+      - According to AICTE, what are the specified norms and standards that Technical Universities need to maintain, with a focus on infrastructure, faculty, and other relevant factors?
+
+  - intent: aicte_inspection_mandate
+    examples: |
+      - According to the AICTE Act, 1987 Clause-11, what is the mandate of the Council regarding the inspection of Universities?
+      - Could you explain the role assigned to the Council as per Clause-11 of the AICTE Act, 1987, concerning the inspection of Universities?
+      - In accordance with Clause-11 of the AICTE Act, 1987, what responsibilities does the Council bear regarding the inspection of Universities?
+      - What is the specific mandate outlined in Clause-11 of the AICTE Act, 1987, regarding the Council's role in inspecting Universities?
+      - Can you provide details about the responsibilities specified in Clause-11 of the AICTE Act, 1987, pertaining to the Council's involvement in the inspection of Universities?
+      - According to the AICTE Act, 1987, specifically in Clause-11, what is the outlined mandate for the Council concerning the inspection of Universities?
+      - How does Clause-11 of the AICTE Act, 1987, define the responsibilities of the Council with regard to the inspection of Universities?
+      - What does the AICTE Act, 1987, Clause-11 mandate the Council to do in terms of inspecting Universities?
+
+  - intent: aicte_approval_application_process
+    examples: |
+      - How can Central/State and Private Universities apply for AICTE's approval, and what information is required in the application process?
+      - Can you explain the process through which Central/State and Private Universities can seek AICTE's approval, including the necessary information required in the application?
+      - What are the steps involved for Central/State and Private Universities to apply for AICTE's approval, and what information needs to be included in the application process?
+      - How do Central/State and Private Universities initiate the application process for AICTE's approval, and what specific information is required during this procedure?
+      - Could you outline the application process for Central/State and Private Universities to obtain AICTE's approval, specifying the necessary information to be provided?
+      - In seeking AICTE's approval, what are the procedures Central/State and Private Universities need to follow, and what information must be included in the application?
+      - What steps should Central/State and Private Universities take when applying for AICTE's approval, and what detailed information is expected during the application process?
+      - How do Central/State and Private Universities go about applying for AICTE's approval, and what specific details are essential in the application process?
+
+   - intent: jurisdiction_approval_authority
+    examples: |
+      - Could you clarify the approved area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities and the approving authority?
+      - What is the sanctioned area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities, and who has the authority to grant approval?
+      - Can you provide information on the officially sanctioned area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities and the entity responsible for granting approval?
+      - Could you elaborate on the endorsed area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities, and who holds the authority to approve it?
+      - In terms of jurisdiction, what is the officially approved area for State Universities/Private Universities/Institutions Deemed to be Universities, and who provides the approval?
+      - What is the designated area of jurisdiction for State Universities/Private Universities/Institutions Deemed to be Universities, and which authority approves it?
+      - Can you explain the area of jurisdiction that is officially approved for State Universities/Private Universities/Institutions Deemed to be Universities and the approving entity?
+      - How is the approved area of jurisdiction determined for State Universities/Private Universities/Institutions Deemed to be Universities, and who is responsible for granting approval?
+
+  - intent: admission_restrictions_deemed_universities
+    examples: |
+      - In what scenarios are Institutions Deemed to be Universities that offer Technical Course(s)/Programme(s) prohibited from admitting students?
+      - Could you outline the conditions under which Institutions Deemed to be Universities offering Technical Course(s)/Programme(s) are restricted from admitting students?
+      - What are the specific circumstances that lead to Institutions Deemed to be Universities offering Technical Course(s)/Programme(s) being barred from admitting students?
+      - Can you explain the situations under which Institutions Deemed to be Universities, providing Technical Course(s)/Programme(s), are not permitted to admit students?
+      - Under what conditions are Institutions Deemed to be Universities, which offer Technical Course(s)/Programme(s), not allowed to admit students?
+      - Could you shed light on the specific instances or conditions that result in Institutions Deemed to be Universities, offering Technical Course(s)/Programme(s), being restricted from admitting students?
+      - What are the situations that trigger the prohibition of admitting students for Institutions Deemed to be Universities offering Technical Course(s)/Programme(s)?
+      - Can you provide details on the circumstances under which Institutions Deemed to be Universities offering Technical Course(s)/Programme(s) face restrictions in admitting students?
+
+  - intent: extension_approval_criteria
+    examples: |
+      - What criteria make Existing Universities/Institutions Deemed to be University eligible for a 3-year Extension of Approval (EoA) from the Academic Year 2024-25?
+      - What are the specific criteria that render Existing Universities/Institutions Deemed to be University eligible for a 3-year Extension of Approval (EoA) starting from the Academic Year 2024-25?
+      - Could you outline the criteria that Existing Universities/Institutions Deemed to be University must fulfill to qualify for a 3-year Extension of Approval (EoA) commencing from the Academic Year 2024-25?
+      - What conditions must be met by Existing Universities/Institutions Deemed to be University to meet the eligibility criteria for a 3-year Extension of Approval (EoA) starting from the Academic Year 2024-25?
+      - Can you elaborate on the specific benchmarks or criteria that Existing Universities/Institutions Deemed to be University need to meet to be eligible for a 3-year Extension of Approval (EoA) from the Academic Year 2024-25?
+      - What are the key factors or criteria that determine the eligibility of Existing Universities/Institutions Deemed to be University for a 3-year Extension of Approval (EoA) beginning from the Academic Year 2024-25?
+      - Could you provide insights into the eligibility criteria that Existing Universities/Institutions Deemed to be University must satisfy to secure a 3-year Extension of Approval (EoA) from the Academic Year 2024-25?
+      - What are the specific standards or criteria that Existing Universities/Institutions Deemed to be University must adhere to in order to be considered eligible for a 3-year Extension of Approval (EoA) starting from the Academic Year 2024-25?
+
+  - intent: aicte_approval_annual_data_requirement
+    examples: |
+      - Despite being eligible for a 3-year Extension of Approval (EoA), what annual information/data requirement exists for Universities/Institutions Deemed to be University during the AICTE Approval Process?
+      - What specific information or data is required annually from Universities/Institutions Deemed to be University, even though they are eligible for a 3-year Extension of Approval (EoA) as per AICTE norms?
+      - For Universities/Institutions Deemed to be University eligible for a 3-year Extension of Approval (EoA), what annual data or information must be submitted during the AICTE Approval Process?
+      - Despite the eligibility for a 3-year Extension of Approval (EoA), what annual data or information is mandated for submission by Universities/Institutions Deemed to be University as part of the AICTE Approval Process?
+      - What are the specific annual information or data requirements for Universities/Institutions Deemed to be University, even if they qualify for a 3-year Extension of Approval (EoA) under AICTE regulations?
+      - Could you outline the annual information or data that Universities/Institutions Deemed to be University must provide during the AICTE Approval Process, despite being eligible for a 3-year Extension of Approval (EoA)?
+      - In the context of AICTE Approval, what kind of annual information or data is expected from Universities/Institutions Deemed to be University, particularly when they are eligible for a 3-year Extension of Approval (EoA)?
+      - Despite the 3-year Extension of Approval (EoA), what annual data or information is stipulated for Universities/Institutions Deemed to be University during the AICTE Approval Process?
+
+  - intent: aicte_processing_schedule_notification
+    examples: |
+      - How does AICTE notify the time schedule for processing applications?
+      - What methods does AICTE employ to communicate the timeline and schedule for processing applications?
+      - Could you explain the procedures through which AICTE conveys the timetable and schedule for processing applications?
+      - In notifying the time schedule for application processing, what approaches or mechanisms are utilized by AICTE?
+      - What are the communication channels or means by which AICTE informs about the time schedule for processing applications?
+      - How does AICTE disseminate information regarding the time schedule for the processing of applications?
+      - Could you elaborate on the ways in which AICTE communicates the timeline and schedule for application processing?
+      - In terms of notifying the time schedule, what strategies or avenues does AICTE use for processing applications?
+
+  - intent: university_approval_request_requirement
+    examples: |
+      - What is the mandatory requirement for processing any request from universities regarding approval?
+      - What is the essential prerequisite for handling any approval request from universities?
+      - Could you outline the compulsory requirement that must be met for processing any request from universities seeking approval?
+      - In the context of processing approval requests from universities, what is the non-negotiable requirement?
+      - What is the mandated condition that universities must fulfill when submitting requests for approval processing?
+      - Could you specify the indispensable requirement associated with the processing of any request from universities regarding approval?
+      - In processing requests for approval from universities, what is the mandatory condition that must be satisfied?
+      - What is the unavoidable requirement for universities when making requests for approval processing?
+
+  - intent: aicte_application_invitation_channels
+    examples: |
+      - What channels are used by AICTE to invite applications for approval?
+      - How does AICTE reach out to institutions to solicit applications for the approval process, and through which channels?
+      - Could you provide insights into the communication channels employed by AICTE to invite applications for the approval process?
+      - In inviting applications for approval, what specific channels are utilized by AICTE to reach potential institutions?
+      - What are the means or platforms through which AICTE extends invitations for applications during the approval process?
+      - How does AICTE utilize various channels to announce and invite applications for the approval process?
+      - Could you elaborate on the communication methods or channels AICTE uses to encourage institutions to submit applications for approval?
+      - In terms of inviting applications, what channels are specifically chosen by AICTE to reach out to institutions for the approval process?
+
+  - intent: aicte_application_deadline
+    examples: |
+      - Is there a deadline for the submission of applications on the AICTE Web-Portal?
+      - Is there a specified cutoff date for the submission of applications through the AICTE Web-Portal?
+      - Could you clarify whether there is a set deadline for institutions to submit applications via the AICTE Web-Portal?
+      - In the context of application submission, is there a fixed timeframe or deadline associated with the AICTE Web-Portal?
+      - Are institutions required to adhere to a particular deadline when submitting applications through the AICTE Web-Portal?
+      - Could you confirm whether there is a designated cutoff date for the submission of applications on the AICTE Web-Portal?
+      - In terms of application submission, is there a prescribed deadline that institutions must follow for the AICTE Web-Portal?
+      - What is the timeframe or cutoff date established for institutions to submit applications on the AICTE Web-Portal?
+
+  - intent: application_process_handbook_scope
+    examples: |
+      - What is the scope of the application process mentioned in Chapter I, II, and III of the Approval Process Handbook?
+      - Could you outline the extent and coverage of the application process detailed in Chapter I, II, and III of the Approval Process Handbook?
+      - In Chapters I, II, and III of the Approval Process Handbook, what is the breadth and scope of the application process?
+      - What does the application process in Chapter I, II, and III of the Approval Process Handbook encompass, and how extensive is its scope?
+      - Can you provide insights into the range and coverage of the application process described in Chapter I, II, and III of the Approval Process Handbook?
+      - In terms of scope, how comprehensive is the application process as outlined in Chapter I, II, and III of the Approval Process Handbook?
+      - Could you elaborate on the breadth and depth of the application process covered in Chapter I, II, and III of the Approval Process Handbook?
+      - What is the extent and inclusiveness of the application process detailed in Chapter I, II, and III of the Approval Process Handbook?
+
+  - intent: technical_program_levels_covered
+    examples: |
+      - Which levels of technical programs are covered under the application process?
+      - What levels of technical programs fall within the purview of the application process?
+      - Could you specify the different levels of technical programs that are included in the application process?
+      - In the context of the application process, which levels of technical programs are considered and covered?
+      - What technical program levels are encompassed by the application process?
+      - Could you provide details on the application process, particularly concerning the levels of technical programs covered?
+      - In the application process, which levels of technical programs are taken into account and addressed?
+      - What are the technical program levels that the application process caters to?
+  
+  - intent: academic_disciplines_covered
+    examples: |
+      - Could you specify the academic disciplines in which programs are included and covered by the application process?
+      - In the application process, which academic disciplines see the inclusion and coverage of programs?
+      - What are the academic disciplines wherein programs are considered and covered as part of the application process?
+      - Can you provide insights into the specific academic disciplines covered by programs in the application process?
+      - In terms of the application process, which academic disciplines have programs that are included and covered?
+      - Could you elaborate on the inclusion and coverage of programs in the application process within specific academic disciplines?
+      - What academic disciplines witness the incorporation and coverage of programs in the application process?
+      - In the context of the application process, which academic disciplines see the inclusion and consideration of programs?
+
+  - intent: specific_categories_approval_handbook
+    examples: |
+      - Are there distinct categories outlined in the Approval Process Handbook specifically for Universities that offer technical programs?
+      - Could you clarify whether the Approval Process Handbook delineates specific categories tailored for Universities offering technical programs?
+      - In the Approval Process Handbook, are there particular categories explicitly mentioned for Universities with a focus on technical programs?
+      - Does the Approval Process Handbook include specific categories intended for Universities that provide technical programs?
+      - Are there categories specifically detailed in the Approval Process Handbook, addressing the unique context of Universities offering technical programs?
+      - Could you provide information on whether the Approval Process Handbook identifies specific categories for Universities emphasizing technical programs?
+      - In the context of Universities offering technical programs, does the Approval Process Handbook categorize them in a distinctive manner?
+      - Are there dedicated categories within the Approval Process Handbook tailored for Universities engaged in technical programs?
+
+  - intent: program_focus_approval_process
+    examples: |
+      - Could you elaborate on the central emphasis of the programs incorporated in the application process?
+      - In the application process, what is the primary concentration or focus of the included programs?
+      - What constitutes the primary focus of the programs that are part of the application process?
+      - Can you shed light on the main area of focus for the programs encompassed by the application process?
+      - What is the central theme or primary aspect of focus for programs included in the application process?
+      - Could you provide insights into the main emphasis of programs covered by the application process?
+      - In terms of the application process, what takes precedence as the primary focus for the included programs?
+      - What is the principal point of focus for the programs that are part of the application process?
+
+  - intent: aicte_processing_schedule_communication
+    examples: |
+      - What methods does AICTE employ to convey the schedule and timeline for processing applications?
+      - Could you outline the communication strategies or mechanisms used by AICTE to communicate the time schedule for processing applications?
+      - In notifying the time schedule for application processing, what approaches or mechanisms are utilized by AICTE?
+      - What are the communication channels or means by which AICTE informs about the time schedule for processing applications?
+      - How does AICTE disseminate information regarding the time schedule for the processing of applications?
+      - Could you elaborate on the ways in which AICTE communicates the timeline and schedule for application processing?
+      - In terms of notifying the time schedule, what strategies or avenues does AICTE use for processing applications?
+      - What are the mechanisms employed by AICTE to inform stakeholders about the time schedule for processing applications?
+
+  - intent: university_approval_request_mandatory_requirement
+    examples: |
+      - What is the essential prerequisite for handling any approval request from universities?
+      - Could you outline the compulsory requirement that must be met for processing any request from universities seeking approval?
+      - In the context of processing approval requests from universities, what is the non-negotiable requirement?
+      - What is the mandated condition that universities must fulfill when submitting requests for approval processing?
+      - Could you specify the indispensable requirement associated with the processing of any request from universities regarding approval?
+      - In processing requests for approval from universities, what is the mandatory condition that must be satisfied?
+      - What is the unavoidable requirement for universities when making requests for approval processing?
+      - Could you highlight the prerequisite that universities cannot overlook when submitting requests for approval processing?
+
+  - intent: technical_program_disciplines_focus
+    examples: |
+      - Could you specify the academic disciplines in which programs are included and covered by the application process?
+      - In the application process, which academic disciplines see the inclusion and coverage of programs?
+      - What are the academic disciplines wherein programs are considered and covered as part of the application process?
+      - Can you provide insights into the specific academic disciplines covered by programs in the application process?
+      - In terms of the application process, which academic disciplines have programs that are included and covered?
+      - Could you elaborate on the inclusion and coverage of programs in the application process within specific academic disciplines?
+      - What academic disciplines witness the incorporation and coverage of programs in the application process?
+      - In the context of the application process, which academic disciplines see the inclusion and consideration of programs?
+
+  - intent: eligibility_criteria_universities
+    examples: |
+      - Are there distinct criteria specified for the eligibility of Universities that offer technical programs?
+      - Could you clarify whether there are specific eligibility requirements outlined for Universities offering technical programs?
+      - In the Approval Process Handbook, are there particular criteria dedicated to the eligibility of Universities with a focus on technical programs?
+      - Does the Approval Process Handbook include specific eligibility criteria intended for Universities that provide technical programs?
+      - Are there criteria specifically detailed in the Approval Process Handbook, addressing the unique context of Universities offering technical programs?
+      - Could you provide information on whether the Approval Process Handbook identifies specific eligibility criteria for Universities emphasizing technical programs?
+      - In the context of Universities offering technical programs, does the Approval Process Handbook specify distinct eligibility criteria?
+      - Are there eligibility criteria within the Approval Process Handbook tailored for Universities engaged in technical programs?
+
+  - intent: technical_program_levels_in_application_process
+    examples: |
+      - What academic levels of technical programs are taken into consideration during the application process?
+      - Could you specify the tiers or stages of technical programs that are included in the application evaluation?
+      - In terms of technical education, which program levels are taken into account in the approval application process?
+      - What are the different stages or degrees of technical programs considered in the AICTE approval application?
+      - Can you elaborate on the various educational levels of technical programs that are part of the approval application assessment?
+      - Regarding technical education, which program tiers or categories are examined in the application process?
+      - How does the application process accommodate the different academic levels of technical programs?
+      - Could you provide details on the inclusion of various technical program levels during the AICTE approval application?
+
+  - intent: multiple_campuses_approval_process
+    examples: |
+      - What is the procedure for a university with multiple campuses, off campuses, or constituent colleges when applying for approval?
+      - How does a university with multiple campuses, off campuses, or constituent colleges initiate the approval application process?
+      - In the context of a university with multiple campuses, off campuses, or constituent colleges, what steps are involved in the application for approval?
+      - Could you outline the specific steps that a university with multiple campuses, off campuses, or constituent colleges needs to follow in the approval application?
+      - What is the application process like for a university with multiple campuses, off campuses, or constituent colleges seeking approval?
+      - How should a university with multiple campuses, off campuses, or constituent colleges navigate the approval application process?
+      - Regarding a university with multiple campuses, off campuses, or constituent colleges, what are the key aspects of the approval application process?
+      - Can you provide details on how universities with multiple campuses, off campuses, or constituent colleges apply for approval from AICTE?
+
+  - intent: permitted_university_courses_nomenclatures
+    examples: |
+      - Which category of universities has permission to conduct courses/programs using the nomenclatures outlined in AICTE APH?
+      - Can you specify the universities that are authorized to run courses/programs with the prescribed nomenclatures in AICTE APH?
+      - What universities are eligible to provide courses/programs with the designated names as per AICTE APH?
+      - Could you clarify which types of universities have the right to deliver courses/programs with nomenclatures mentioned in AICTE APH?
+      - In the context of AICTE APH, which classification of universities is permitted to conduct courses/programs with specified nomenclatures?
+      - Are there specific types of universities that are granted the privilege to offer courses/programs with the designated names as per AICTE APH?
+      - What categories of universities are granted the authority to conduct courses/programs using the prescribed nomenclatures in AICTE APH?
+      - Can you elaborate on the universities that have the approval to run courses/programs with nomenclatures as outlined in AICTE APH?
+
+  - intent: directive_central_state_private_universities
+    examples: |
+      - What is the directive for Central/State/Private Universities seeking AICTE approval?
+      - What guidelines are provided for Central/State/Private Universities applying for AICTE approval?
+      - Could you outline the instructions for Central/State/Private Universities that are in the process of seeking AICTE approval?
+      - What are the directives for Central/State/Private Universities intending to obtain AICTE approval?
+      - Can you provide clarity on the specific instructions given to Central/State/Private Universities seeking AICTE approval?
+      - In the context of AICTE approval, what guidelines should Central/State/Private Universities adhere to?
+      - What specific guidance is provided for Central/State/Private Universities in their pursuit of AICTE approval?
+      - Could you elaborate on the directions given to Central/State/Private Universities applying for AICTE approval?
+      - What are the recommended steps and guidelines for Central/State/Private Universities seeking approval from AICTE?
+
+  - intent: directive_deemed_universities_aicte_approval
+    examples: |
+      - What is the directive for Institutions Deemed to be Universities regarding AICTE approval?
+      - What specific guidance is issued for Institutions Deemed to be Universities concerning AICTE approval?
+      - Could you outline the directives given to Institutions Deemed to be Universities in relation to AICTE approval?
+      - What instructions are provided to Institutions Deemed to be Universities regarding their pursuit of AICTE approval?
+      - Can you clarify the guidelines that Institutions Deemed to be Universities must follow for AICTE approval?
+      - In the context of AICTE approval, what specific directives apply to Institutions Deemed to be Universities?
+      - What are the recommended steps for Institutions Deemed to be Universities seeking approval from AICTE?
+      - Could you provide insight into the instructions given to Institutions Deemed to be Universities for AICTE approval?
+      - What are the prescribed guidelines for Institutions Deemed to be Universities in their application for AICTE approval?
+
+  - intent: norms_standards_requirement_universities
+    examples: |
+      - What is the requirement for State Public & Private Universities and Central Universities regarding Norms & Standards?
+      - What norms and standards are State Public & Private Universities and Central Universities required to adhere to?
+      - Could you outline the mandatory norms and standards that State Public & Private Universities and Central Universities must follow?
+      - What specific requirements do State Public & Private Universities and Central Universities need to fulfill in terms of norms and standards?
+      - Can you provide clarity on the standards and norms that State Public & Private Universities and Central Universities are obligated to maintain?
+      - In the context of AICTE approval, what norms and standards are expected from State Public & Private Universities and Central Universities?
+      - What are the stipulated norms and standards that State Public & Private Universities and Central Universities should maintain?
+      - Could you elaborate on the requirements imposed on State Public & Private Universities and Central Universities regarding norms and standards?
+      - What standards and norms must State Public & Private Universities and Central Universities comply with for AICTE approval?
+
+  - intent: partial_approval_permitting_conditions
+    examples: |
+      - Is it permitted to apply for partial approval of any Programme(s)/Course(s)/Intake at any level?
+      - Are institutions allowed to seek partial approval for certain Programme(s)/Course(s)/Intake at any level?
+      - Can institutions apply for approval for only specific Programme(s)/Course(s)/Intake at any level, rather than the entire set?
+      - Is it within the rules for institutions to request approval for only a portion of their Programme(s)/Course(s)/Intake at any level?
+      - Are institutions given the option to seek approval for particular Programme(s)/Course(s)/Intake levels, excluding others?
+      - Can institutions choose to apply for approval for a selective set of Programme(s)/Course(s)/Intake at any level?
+      - Is there flexibility for institutions to seek partial approval for specific Programme(s)/Course(s)/Intake at any level?
+      - Are institutions permitted to apply for approval on a limited basis, focusing on particular Programme(s)/Course(s)/Intake at any level?
+      - Can institutions opt for partial approval, seeking approval only for specific Programme(s)/Course(s)/Intake levels?
+
+  - intent: user_id_password_approval_process
+    examples: |
+      - What is the significance of USER ID and Password in the approval process?
+      - How important is the use of USER ID and Password in the overall approval process?
+      - Could you elaborate on the significance of having a USER ID and Password in the AICTE approval process?
+      - What role do the USER ID and Password play in the approval process, and why are they crucial?
+      - Can you explain the importance of maintaining a USER ID and Password for institutions in the approval process?
+      - In the context of AICTE approval, what significance is attributed to having a valid USER ID and Password?
+      - Why is it imperative for institutions to possess a valid USER ID and Password during the AICTE approval process?
+      - What is the role of USER ID and Password, and how do they contribute to the success of the approval process?
+      - Could you shed light on why having a USER ID and Password is a critical aspect of the AICTE approval process?
+
+  - intent: ter_charges_definition
+    examples: |
+      - What are Technical Education Regulatory (TER) Charges, and who is required to pay them?
+      - Can you explain what Technical Education Regulatory (TER) Charges entail, and who bears the responsibility of payment?
+      - Could you provide information on what is encompassed by Technical Education Regulatory (TER) Charges and who is obligated to pay them?
+      - What do Technical Education Regulatory (TER) Charges involve, and which entities are mandated to cover these charges?
+      - Can you elaborate on Technical Education Regulatory (TER) Charges and specify who is expected to make the payments?
+      - In the context of AICTE approval, what is the nature of Technical Education Regulatory (TER) Charges, and who is accountable for settling them?
+      - Why are Technical Education Regulatory (TER) Charges levied, and which parties are required to make these payments?
+      - What constitutes Technical Education Regulatory (TER) Charges, and who is responsible for the payment of these charges?
+      - Could you clarify the nature of Technical Education Regulatory (TER) Charges and identify the entities obligated to pay them?
+
+  - intent: ter_charges_structure_first_approval
+    examples: |
+      - What is the TER Charges structure for existing universities applying for approval for the first time?
+      - Can you outline the fee structure for TER Charges applicable to existing universities seeking approval for the first time?
+      - What are the specified TER Charges for universities that are applying for approval for the first time?
+      - Could you provide details on the fee breakdown for TER Charges imposed on existing universities in their initial approval application?
+      - How is the TER Charges structure designed for universities that are in the process of seeking approval for the first time?
+      - What comprises the TER Charges structure for existing universities during their initial application for approval?
+      - Can you elucidate the financial arrangement, specifically the TER Charges, for universities applying for approval for the first time?
+      - What is the prescribed monetary framework for TER Charges that applies to existing universities in their inaugural approval application?
+      - Could you elaborate on the financial obligations, particularly the TER Charges, faced by existing universities when applying for approval for the first time?
+
+  - intent: ter_charges_applicability_main_off_campus
+    examples: |
+      - Are TER Charges applicable for main and off-campus separately?
+      - Are TER Charges distinct for the main and off-campus, or are they applied collectively?
+      - Do TER Charges apply separately for the main campus and off-campus locations?
+      - Are TER Charges segregated for the main institution and its off-campus branches?
+      - In the context of TER Charges, is there a differentiation between the main campus and off-campus charges?
+      - Do TER Charges need to be paid separately for the main campus and any off-campus branches?
+      - Are there distinct TER Charges assigned for the main campus and off-campus facilities?
+      - Is there a separate calculation for TER Charges pertaining to the main institution and its off-campus extensions?
+      - In the assessment of TER Charges, is there a specific breakdown for the main campus versus off-campus locations?
+
+  - intent: annual_increase_ter_charges
+    examples: |
+      - Is there an annual increase in TER Charges?
+      - Does the TER Charges structure undergo an annual increment?
+      - Is there a yearly escalation in the TER Charges, or do they remain constant?
+      - Are TER Charges subject to an annual increase, and if so, how is it determined?
+      - Does the TER Charges framework include an annual rise in charges?
+      - Is there a provision for an annual increment in TER Charges?
+      - Are applicants required to consider an annual rise in TER Charges when budgeting?
+      - Does the AICTE impose an annual escalation in TER Charges?
+      - In the context of TER Charges, is there a yearly adjustment for inflation or other factors?
+
+  - intent: circumstances_additional_ter_charges
+    examples: |
+      - In what circumstances would additional TER Charges be required?
+      - Under what conditions would institutions be obligated to pay additional TER Charges?
+      - Are there specific scenarios that necessitate the payment of extra TER Charges?
+      - In what instances would institutions incur additional TER Charges beyond the standard fees?
+      - Are there circumstances that trigger the requirement for institutions to pay supplemental TER Charges?
+      - What situations would prompt the imposition of additional TER Charges?
+      - Do institutions need to pay extra TER Charges in certain specific situations?
+      - Under what circumstances would institutions face the need to settle additional TER Charges?
+      - In what conditions would institutions be expected to bear additional TER Charges beyond the regular fees?
+
+  - intent: additional_ter_charges_payment
+    examples: |
+      - How are additional TER Charges paid?
+      - What is the process for settling additional TER Charges?
+      - How can institutions make payments for any additional TER Charges?
+      - Is there a specified method for remitting additional TER Charges?
+      - What payment mechanisms are in place for institutions to cover additional TER Charges?
+      - Are there specific guidelines for the payment process of any additional TER Charges?
+      - How should institutions initiate the payment of any supplementary TER Charges?
+      - Is there a designated channel or platform for the payment of additional TER Charges?
+      - What steps do institutions need to follow to ensure the payment of any extra TER Charges?
+
+  - intent: aicte_approval_application_submission
+    examples: |
+      - How can applicants submit their applications for AICTE approval?
+      - What is the procedure for applicants to submit their applications for AICTE approval?
+      - How should institutions go about submitting their applications for AICTE approval?
+      - Is there a specific protocol for applicants to follow when submitting their AICTE approval applications?
+      - What steps are involved in the submission of applications for AICTE approval?
+      - Can you outline the process that applicants need to follow for submitting their AICTE approval applications?
+      - Are there specific guidelines or instructions for the submission of applications for AICTE approval?
+      - How can institutions initiate the submission of their applications for AICTE approval?
+      - What is the prescribed method for applicants to submit their applications for AICTE approval?
+
+  - intent: application_data_editing_provision
+    examples: |
+      - Is there a provision for editing the data after submission of the application?
+      - Can institutions make edits to the data after the initial submission of the application?
+      - Is there a feature that allows for data editing post the submission of the application?
+      - Does the AICTE provide a provision for applicants to edit data after the application has been submitted?
+      - Are institutions allowed to make changes to the submitted data once the application process is complete?
+      - Is there a mechanism in place for applicants to edit information after the initial submission of the application?
+      - Can institutions revisit and edit the data submitted in the application at a later stage?
+      - Does the AICTE allow for any modifications to the application data after the initial submission?
+      - Is there flexibility for institutions to make amendments to the data even after the application has been submitted?
+
+  - intent: importance_of_cut_off_date_submission
+    examples: |
+      - What is the importance of submitting applications within the cut-off date?
+      - Why is it crucial for institutions to submit their applications within the specified cut-off date?
+      - What significance is attached to adhering to the cut-off date when submitting applications?
+      - Can you elaborate on the importance of meeting the cut-off date for application submissions?
+      - Why is it essential for institutions to ensure timely submission of applications within the cut-off date?
+      - What are the consequences of failing to submit applications within the prescribed cut-off date?
+      - How does the cut-off date impact the overall application submission process?
+      - What are the implications of missing the cut-off date for application submissions?
+      - In what ways does the AICTE emphasize the significance of adhering to the cut-off date for applications?
+
+  - intent: affidavit_requirement_application_process
+    examples: |
+      - What is the requirement regarding an Affidavit in the application process?
+      - What role does an Affidavit play in the overall application process?
+      - Can you explain the specific requirement for an Affidavit in the application process?
+      - How is an Affidavit incorporated into the application process, and what purpose does it serve?
+      - What is the significance of including an Affidavit as part of the application process?
+      - Can you elaborate on the necessity of providing an Affidavit in the application submission?
+      - How does the inclusion of an Affidavit contribute to the completeness of the application process?
+      - What specific details or declarations are expected in the Affidavit during the application process?
+      - In what manner does the requirement for an Affidavit enhance the integrity of the application process?
+
+  - intent: documents_submission_scrutiny
+    examples: |
+      - What documents need to be submitted along with the online application for scrutiny?
+      - Could you outline the necessary documents that must accompany the online application for scrutiny?
+      - What documentation is required to be submitted along with the online application during the scrutiny process?
+      - In the context of the online application, what specific documents need to be provided for scrutiny?
+      - What paperwork is mandated to accompany the online application to undergo the scrutiny process?
+      - Could you detail the documents that applicants should submit along with the online application for scrutiny?
+      - What is the specific set of documents that must be submitted for scrutiny alongside the online application?
+      - Regarding the online application, what documents are essential for the scrutiny process?
+      - Can you provide a checklist of documents required to be submitted along with the online application for scrutiny?
+
+  - intent: document_submission_process_chapter_ii_iii
+    examples: |
+      - What is the document submission process for applications falling under Chapter II and III?
+      - What is the prescribed process for submitting documents for applications falling under Chapter II and III?
+      - Could you elaborate on the document submission procedure for applications covered in Chapter II and III?
+      - In the case of applications falling under Chapter II and III, how should the document submission be carried out?
+      - What steps are involved in the document submission process for applications categorized under Chapter II and III?
+      - Can you provide details on how documents should be submitted for applications falling within Chapter II and III?
+      - How does the document submission process work for applications falling under Chapter II and III?
+      - Regarding applications covered in Chapter II and III, what is the protocol for submitting the required documents?
+      - What are the specifics of the document submission process for applications associated with Chapter II and III?
+
+  - intent: promoter_trust_society_company_university_requirements
+    examples: |
+      - What are the requirements for the built-up area and possession for the Promoter Trust/Society/Company/Institution of a proposed University?
+      - What are the prerequisites concerning built-up area and possession for the Promoter Trust/Society/Company/Institution of a proposed University?
+      - Could you outline the specific requirements for built-up area and possession for the Promoter Trust/Society/Company/Institution of a proposed University?
+      - In terms of a proposed University, what norms should the Promoter Trust/Society/Company/Institution fulfill regarding built-up area and possession?
+      - What criteria must be met by the Promoter Trust/Society/Company/Institution regarding built-up area and possession for a proposed University?
+      - Can you provide details on the built-up area and possession requirements for the Promoter Trust/Society/Company/Institution of a proposed University?
+      - How does the Approval Process Handbook define the requirements for built-up area and possession for the Promoter Trust/Society/Company/Institution of a proposed University?
+      - What guidelines exist for the Promoter Trust/Society/Company/Institution concerning built-up area and possession for a proposed University?
+      - Regarding a proposed University, what are the specific standards for built-up area and possession that the Promoter Trust/Society/Company/Institution must adhere to?
+
+  - intent: university_approval_process_handbook_norms
+    examples: |
+      - What norms does a University need to fulfill according to the Approval Process Handbook?
+      - What norms are outlined in the Approval Process Handbook that a University must fulfill?
+      - Could you provide an overview of the norms that a University needs to satisfy according to the Approval Process Handbook?
+      - In the context of the Approval Process Handbook, what are the stipulated norms that a University must adhere to?
+      - What are the regulatory norms set by the Approval Process Handbook that a University is expected to fulfill?
+      - Can you enumerate the specific norms that a University needs to meet as per the Approval Process Handbook?
+      - How does the Approval Process Handbook define the norms that a University is required to fulfill?
+      - What criteria and standards are mentioned in the Approval Process Handbook as norms for a University?
+      - Regarding the Approval Process Handbook, what are the mandatory norms for a University to ensure compliance?
+
+  - intent: completion_of_buildings_requirements
+    examples: |
+      - What are the requirements for the completion of buildings for the First Year of the Programme(s)?
+      - What are the stipulated requirements for the completion of buildings for the first year of Programme(s)?
+      - Could you outline the specific requirements regarding the completion of buildings for the first year of Programme(s)?
+      - In terms of the first year of Programme(s), what are the detailed requirements for the completion of buildings?
+      - What criteria must be met concerning the completion of buildings for the first year of Programme(s)?
+      - Can you provide detailed information on the requirements for the completion of buildings for the first year of Programme(s)?
+      - How does the Approval Process Handbook define the requirements for the completion of buildings for the first year of Programme(s)?
+      - What guidelines exist for the completion of buildings in the context of the first year of Programme(s)?
+      - Regarding the first year of Programme(s), what are the specific standards for the completion of buildings that institutions must follow?
+
+  - intent: head_of_university_qualifications
+    examples: |
+      - What qualifications should the Head of the University (Vice Chancellor) have?
+      - What are the necessary qualifications for the individual holding the position of Head of the University (Vice Chancellor)?
+      - Could you detail the required qualifications for the Head of the University (Vice Chancellor)?
+      - In terms of the Head of the University (Vice Chancellor), what educational background and qualifications are expected?
+      - What criteria must be met by the individual serving as the Head of the University (Vice Chancellor) concerning qualifications?
+      - Can you provide specifics on the qualifications deemed suitable for the Head of the University (Vice Chancellor)?
+      - How does the Approval Process Handbook define the requisite qualifications for the Head of the University (Vice Chancellor)?
+      - What educational standards and qualifications are outlined for the Head of the University (Vice Chancellor)?
+      - Regarding the Head of the University (Vice Chancellor), what are the specified qualifications that must be fulfilled?
+
+  - intent: restrictions_on_university_names
+    examples: |
+      - Are there any restrictions on using specific names in the name of the University?
+      - Are there any limitations on using specific names in the nomenclature of the University?
+      - Could you outline any restrictions pertaining to the inclusion of specific names in the University's title?
+      - In the naming of a University, are there any restrictions or guidelines regarding specific terms?
+      - What regulations or constraints exist concerning the use of certain names in the title of a University?
+      - Can you elaborate on any prohibitions or guidelines related to the incorporation of specific names in a University's designation?
+      - How does the Approval Process Handbook address the use of specific names in the title of a University?
+      - Regarding the naming of a University, are there any prescribed restrictions on using certain terms?
+      - What rules or stipulations are in place regarding the inclusion of specific names in the University's title?
+
+  - intent: approval_of_technical_programs_by_ugc
+    examples: |
+      - How should an Applicant apply for Approval of Technical Programme(s) as approved by UGC?
+      - How should an applicant proceed to seek approval for Technical Programme(s) already sanctioned by UGC?
+      - Could you provide guidance on the application process for gaining approval for Technical Programme(s) endorsed by UGC?
+      - In the context of UGC-approved Technical Programme(s), what steps should an applicant take to seek approval?
+      - What is the procedural approach for applicants intending to obtain approval for Technical Programme(s) already given the green light by UGC?
+      - Can you detail the steps an applicant needs to follow when applying for approval of Technical Programme(s) approved by UGC?
+      - How does the Approval Process Handbook delineate the application process for UGC-endorsed Technical Programme(s)?
+      - Regarding UGC-approved Technical Programme(s), what is the recommended procedure for applicants seeking approval?
+      - What instructions or steps are specified for applicants in the Approval Process Handbook when applying for approval of Technical Programme(s) already approved by UGC?
+
+  - intent: application_processing_handbook
+    examples: |
+      - How is the application processed according to the Approval Process Handbook?
+      - How is the application for approval processed as per the guidelines in the Approval Process Handbook?
+      - Could you provide an overview of the processing steps for applications as outlined in the Approval Process Handbook?
+      - In terms of application processing, what are the stages and procedures according to the Approval Process Handbook?
+      - What steps and protocols are involved in the processing of applications as per the Approval Process Handbook?
+      - Can you outline the processing mechanisms for applications laid out in the Approval Process Handbook?
+      - How does the Approval Process Handbook define the processing timeline and steps for applications?
+      - Regarding application processing, what are the key phases and considerations according to the Approval Process Handbook?
+      - What guidelines or instructions exist in the Approval Process Handbook regarding the processing of applications?
+
+  - intent: key_evaluation_criteria_ugc_regulations
+    examples: |
+      - What are the key evaluation criteria for universities and institutions Deemed to be Universities, as per UGC regulations?
+      - What are the primary evaluation criteria for universities and institutions Deemed to be Universities, in accordance with UGC regulations?
+      - Could you outline the key factors considered in the evaluation of universities and institutions Deemed to be Universities as per UGC regulations?
+      - In terms of UGC regulations, what are the main criteria for evaluating universities and institutions Deemed to be Universities?
+      - What specific benchmarks and criteria are utilized in the evaluation process for universities and institutions Deemed to be Universities, as per UGC regulations?
+      - Can you provide details on the essential evaluation criteria for universities and institutions Deemed to be Universities according to UGC regulations?
+      - How does the Approval Process Handbook define the key evaluation criteria for universities and institutions Deemed to be Universities as per UGC regulations?
+      - Regarding UGC regulations, what considerations and benchmarks are pivotal in the evaluation of universities and institutions Deemed to be Universities?
+      - What specific parameters and standards are set forth in UGC regulations for the evaluation of universities and institutions Deemed to be Universities?
+
+  - intent: consequences_of_missing_documents_evaluation
+    examples: |
+      - What happens if the specified documents are not uploaded on the portal during the evaluation process?
+      - What are the consequences if the specified documents are not uploaded on the portal during the evaluation process?
+      - Could you explain the outcomes if the required documents are not submitted on the portal during the evaluation phase?
+      - In case the specified documents are omitted during the evaluation process, what repercussions should be expected?
+      - What happens if the documents mandated for submission are not uploaded onto the portal during the evaluation?
+      - Can you outline the impact or results if the documents specified are not provided during the evaluation process?
+      - How does the evaluation process handle situations where the necessary documents are not uploaded on the portal?
+      - Regarding the evaluation phase, what are the implications if the specified documents are not submitted on the portal?
+      - Could you detail the repercussions or actions taken if the required documents are absent during the evaluation process?
+
+  - intent: evaluation_of_universities_running_technical_programs
+    examples: |
+      - How are universities, running technical programs for the first time, evaluated?
+      - How are universities, initiating technical programs for the first time, assessed during the evaluation process?
+      - Could you provide insights into the evaluation criteria for universities commencing AICTE-approved technical programs for the first time?
+      - In the context of universities launching technical programs for the first time, what considerations are taken into account during the evaluation?
+      - What specific parameters are used to evaluate universities that are introducing technical programs for the first time?
+      - Can you outline the evaluation process for universities venturing into AICTE-approved technical programs for the first time?
+      - How does the evaluation criteria differ for universities running AICTE-approved technical programs for the first time?
+      - Regarding universities initiating technical programs, what factors are considered in the evaluation process?
+      - Could you explain the evaluation standards for universities that are in the initial phase of offering AICTE-approved technical programs?
+
+  - intent: aicte_approved_universities_categories_application
+    examples: |
+      - How are universities, running AICTE approved technical programs and desiring to apply for various categories in accordance with Chapter-II, processed?
+      - How are universities, currently running AICTE-approved technical programs and seeking approval for various categories in accordance with Chapter-II, processed?
+      - Could you elaborate on the processing steps for universities running AICTE-approved technical programs and applying for different categories outlined in Chapter-II?
+      - In terms of universities offering AICTE-approved technical programs, what is the procedural approach when applying for various categories according to Chapter-II?
+      - What steps and protocols are involved in the processing of universities running AICTE-approved technical programs and desiring approval in different categories as per Chapter-II?
+      - Can you outline the specific steps and considerations for universities with AICTE-approved technical programs applying for various categories in accordance with Chapter-II?
+      - How does the processing criteria differ for universities currently offering AICTE-approved technical programs and seeking approval for different categories under Chapter-II?
+      - Regarding universities running AICTE-approved technical programs, what factors are taken into consideration during the processing for various categories as per Chapter-II?
+      - Could you provide details on the processing mechanisms for universities running AICTE-approved technical programs and desiring approval in different categories according to Chapter-II?
+
+  - intent: considerations_for_medical_universities_approval
+    examples: |
+      - What are the considerations for universities applying for approval in other domains, such as a Medical University?
+      - What considerations apply to universities seeking approval in other domains, such as a Medical University?
+      - Could you outline the specific considerations for universities applying for approval in domains other than technical, such as a Medical University?
+      - In terms of universities in diverse domains, what factors are taken into account when applying for approval?
+      - What criteria and parameters are considered for universities venturing into domains other than technical when seeking approval?
+      - Can you provide insights into the considerations for universities applying for approval in domains like Medical University?
+      - How does the Approval Process Handbook address the unique considerations for universities applying in other domains, for instance, a Medical University?
+      - Regarding universities seeking approval in non-technical domains, what specific factors are considered in the application process?
+      - Could you explain the requirements and considerations for universities aiming for approval in domains beyond technical, such as a Medical University?
+
+  - intent: off_campuses_constituent_colleges_requirement
+    examples: |
+      - What is the requirement for Off Campuses/Constituent Colleges?
+      - What are the specific requirements for Off Campuses/Constituent Colleges in the approval process?
+      - Could you detail the prerequisites for Off Campuses/Constituent Colleges seeking approval?
+      - In the context of Off Campuses/Constituent Colleges, what are the mandatory requirements for approval?
+      - What conditions and stipulations apply to Off Campuses/Constituent Colleges during the approval process?
+      - Can you provide insights into the approval criteria and requirements for Off Campuses/Constituent Colleges?
+      - How does the Approval Process Handbook define the requirements for Off Campuses/Constituent Colleges seeking approval?
+      - Regarding Off Campuses/Constituent Colleges, what specific considerations and criteria must be met for approval?
+      - Could you explain the necessary steps and conditions for Off Campuses/Constituent Colleges in the approval process?
+
+    - intent: documents_upload_digital_signatures_significance
+    examples: |
+      - What documents must applicants upload, and could you elaborate on the role of digital signatures in the application process?
+      - Can you provide details on the required documents for applicants and the importance of incorporating digital signatures in the application process?
+      - Regarding the application process, what documents are applicants mandated to upload, and how do digital signatures contribute to the process?
+      - Could you outline the documents necessary for applicants and shed light on the significance of digital signatures in the application process?
+      - What are the specific documents that applicants need to upload, and what role does a digital signature play in the application process?
+      - In the context of the application process, what documents are applicants expected to upload, and why is a digital signature crucial?
+      - Can you explain the documents applicants are obligated to upload and delve into the significance of utilizing digital signatures in the application process?
+      - Regarding the application process, what documents should applicants upload, and what is the importance of incorporating digital signatures?
+
+  - intent: expert_visit_committee_new_institution_deemed_university
+    examples: |
+      - When is an Expert Visit Committee conducted for a new Institution Deemed to be University/University?
+      - Can you explain the circumstances under which an Expert Visit Committee is organized for a new Institution Deemed to be University/University?
+      - In the case of a new Institution Deemed to be University/University, when is it appropriate to conduct an Expert Visit Committee?
+      - Could you outline the situations that warrant the implementation of an Expert Visit Committee for a new Institution Deemed to be University/University?
+      - What triggers the arrangement of an Expert Visit Committee for a new Institution Deemed to be University/University?
+      - How is the decision made to conduct an Expert Visit Committee for a new Institution Deemed to be University/University?
+      - Can you provide insights into the factors determining the timing of an Expert Visit Committee for a new Institution Deemed to be University/University?
+      - Regarding a new Institution Deemed to be University/University, what factors influence the scheduling of an Expert Visit Committee?
+
+  - intent: rejected_application_appeal_provision
+    examples: |
+      - What are the repercussions if the application for a new Institution Deemed to be University/University is rejected at the Level of Scrutiny/Re-Scrutiny, and the appeal provision is not availed?
+      - Can you explain the consequences of not availing the appeal provision when the application for a new Institution Deemed to be University/University is rejected at the Level of Scrutiny/Re-Scrutiny?
+      - In the scenario of a rejected application for a new Institution Deemed to be University/University, what happens if the appeal provision is not utilized after scrutiny?
+      - Could you outline the outcomes when the application for a new Institution Deemed to be University/University is rejected at the Level of Scrutiny/Re-Scrutiny, and the appeal option is not exercised?
+      - What course of action follows the rejection of an application for a new Institution Deemed to be University/University at the Level of Scrutiny/Re-Scrutiny without availing the appeal provision?
+      - How is the rejection of an application for a new Institution Deemed to be University/University addressed when the appeal provision is not utilized following scrutiny?
+      - Can you provide insights into the consequences if the appeal provision is not availed after the rejection of an application for a new Institution Deemed to be University/University?
+      - Regarding a rejected application, what unfolds if the appeal provision is not utilized for a new Institution Deemed to be University/University?
+
+  - intent: conditional_approval_grant_circumstances
+    examples: |
+      - Under what circumstances does the Council normally grant Conditional Approval to any University?
+      - Can you provide details on the situations that typically lead to the Council granting Conditional Approval to a University?
+      - In what conditions does the Council usually decide to grant Conditional Approval to a University?
+      - Could you elaborate on the common scenarios that result in the Council extending Conditional Approval to a University?
+      - What factors contribute to the Council's decision to grant Conditional Approval to a University, and under what circumstances does this occur?
+      - How does the Council determine when to grant Conditional Approval to a University, and what criteria are considered?
+      - Can you explain the general conditions that lead the Council to grant Conditional Approval to a University?
+      - Regarding Conditional Approval, what circumstances prompt the Council to make such a decision for a University?
+
+  - intent: appeal_process_against_executive_committee_decision
+    examples: |
+      - What is the process for an aggrieved University/Applicant to appeal the decision of the Executive Committee?
+      - Can you provide details on the steps involved when an aggrieved University/Applicant wishes to appeal the decision of the Executive Committee?
+      - In case of disagreement with the Executive Committee's decision, what is the established process for an aggrieved University/Applicant to appeal?
+      - Could you outline the established procedures for an aggrieved University/Applicant appealing the decision of the Executive Committee?
+      - How does an aggrieved University/Applicant initiate the appeal process for the decision made by the Executive Committee?
+      - Can you explain the steps and formalities involved when an aggrieved University/Applicant appeals the decision of the Executive Committee?
+      - Regarding appeals, what is the protocol for an aggrieved University/Applicant appealing the decision made by Executive Committee?
+      - What are the steps an aggrieved University/Applicant needs to follow when appealing the decision of the Executive Committee?
+
+  - intent: infrastructure_faculty_requirements_handbook
+    examples: |
+      - What are the specific criteria regarding infrastructure, faculty, and other facilities outlined in the Approval Process Handbook?
+      - Could you provide details on the infrastructure, faculty, and other facility requirements specified in the Approval Process Handbook?
+      - In terms of infrastructure, faculty, and other facilities, what does the Approval Process Handbook mandate for institutions seeking approval?
+      - Can you outline the Approval Process Handbook's stipulations concerning infrastructure, faculty, and other essential facilities?
+      - Regarding infrastructure, faculty, and other facilities, what are the precise expectations set forth in the Approval Process Handbook?
+      - What are the explicit guidelines regarding infrastructure, faculty, and other facilities in the Approval Process Handbook?
+      - Could you elaborate on the infrastructure, faculty, and other facility prerequisites as per the Approval Process Handbook?
+      - In seeking approval, what are the specific requirements related to infrastructure, faculty, and other facilities according to the Approval Process Handbook?
+
+  - intent: final_approval_rejection_communication
+    examples: |
+      - When should one anticipate the issuance of the final Letter of Approval/Rejection, and what is the communication method for this information?
+      - Can you provide insights into the expected timeframe for receiving the Letter of Approval/Rejection and the communication process involved?
+      - Regarding the Letter of Approval (LoA) or Letter of Rejection, when can institutions generally expect to receive it, and how is the information conveyed?
+      - What is the usual timeline for the issuance of the Letter of Approval/Rejection, and what communication channels are utilized for this purpose?
+      - Could you elaborate on the typical timeline and communication method for receiving the Letter of Approval/Rejection?
+      - In the context of the Letter of Approval (LoA), when can institutions typically anticipate its issuance, and how is this communicated?
+      - Can you provide details on the expected timeline for receiving the Letter of Approval/Rejection and the corresponding communication process?
+      - What is the standard timeframe for the issuance of the Letter of Approval/Rejection, and how is the information communicated?
+
+  - intent: deadline_for_approval_letter_issuance
+    examples: |
+      - Is there a stipulated deadline for the issuance of the Letter of Approval (LoA) after the approval process is completed?
+      - Could you clarify if there is a specific timeframe within which the Letter of Approval (LoA) must be issued?
+      - Regarding the issuance of the Letter of Approval (LoA), is there a set deadline that institutions need to be aware of?
+      - Can you provide information on whether there is a prescribed deadline for the issuance of the Letter of Approval (LoA)?
+      - Is there a timeframe specified for the issuance of the Letter of Approval (LoA), and what are the implications if this deadline is not met?
+      - What is the deadline for the issuance of the Letter of Approval (LoA) after the approval process is concluded?
+      - Could you elaborate on any time constraints associated with the issuance of the Letter of Approval (LoA)?
+      - Is there a specific timeframe institutions should expect for the issuance of the Letter of Approval (LoA)?
+
+  - intent: security_deposit_exempted_institutions
+    examples: |
+      - Which types of institutions are exempted from paying the Security Deposit as per the regulations?
+      - Can you outline the categories of institutions that are not required to pay the Security Deposit according to the regulations?
+      - Regarding the Security Deposit, which types of institutions are exempted from this requirement?
+      - Could you specify the institutions that are exempt from paying the Security Deposit as per the established regulations?
+      - What categories of institutions are exempted from the obligation to pay the Security Deposit?
+      - Are there specific types of institutions that are not mandated to pay the Security Deposit as per regulations?
+      - Can you provide information on which institutions fall under the exemption from paying the Security Deposit?
+      - In terms of the Security Deposit, which categories of institutions are not required to make this payment?
+
+  - intent: private_universities_security_deposit_exemption
+    examples: |
+      - Are Private Universities/Institution Deemed to be University (Private) exempted from paying the Security Deposit?
+      - Could you clarify whether Private Universities/Institution Deemed to be University (Private) are exempt from the obligation to pay the Security Deposit?
+      - Regarding the Security Deposit, are Private Universities/Institution Deemed to be University (Private) exempt from this financial requirement?
+      - Can you provide insights into whether Private Universities/Institution Deemed to be University (Private) are excluded from paying the Security Deposit?
+      - Are Private Universities/Institution Deemed to be University (Private) excused from the stipulation to pay the Security Deposit?
+      - Could you explain whether there is an exemption for Private Universities/Institution Deemed to be University (Private) from the Security Deposit?
+      - In the context of the Security Deposit, do regulations exempt Private Universities/Institution Deemed to be University (Private) from making this payment?
+      - Can you specify if Private Universities/Institution Deemed to be University (Private) are exempt from the requirement to pay the Security Deposit?
+
+  - intent: security_deposit_creation_for_new_programme_level
+    examples: |
+      - In what situations is it mandatory for a University to establish a Security Deposit for the introduction of a new Programme or at a different academic Level?
+      - Under what circumstances is a University required to initiate a Security Deposit for a newly proposed Programme or at a different academic Level?
+      - Can you elaborate on the conditions that necessitate a University to generate a Security Deposit for the commencement of a new Programme or at an alternative academic Level?
+      - What criteria trigger the obligation for a University to form a Security Deposit when introducing a new Programme or at a different academic Level?
+      - When does a University need to create a Security Deposit, and what are the specific scenarios that lead to this requirement for a new Programme or academic Level?
+      - Could you outline the situations where a University must establish a Security Deposit concerning the launch of a new Programme or at a distinct academic Level?
+      - In what instances is the formation of a Security Deposit mandatory for a University, especially in the context of introducing a new Programme or at a different academic Level?
+      - Can you provide insights into the circumstances that demand a University to set up a Security Deposit for a new Programme or at a different academic Level?
+
+  - intent: expert_visit_committee_exemption_supernumerary_seats
+    examples: |
+      - What exemptions exist for the Expert Visit Committee when considering the introduction of supernumerary seats for specific categories in certain universities?
+      - Could you elucidate on the specific exemptions granted to the Expert Visit Committee in cases involving the introduction of supernumerary seats for particular categories in certain universities?
+      - In the context of introducing supernumerary seats, what exemptions are applicable to the Expert Visit Committee, particularly for certain categories in specific universities?
+      - Can you provide details on the exemptions afforded to the Expert Visit Committee when evaluating the introduction of supernumerary seats for OCI/Foreign Nationals/Children of Indian Workers in the Gulf Countries in certain universities?
+      - Regarding the introduction of supernumerary seats, what specific exemptions guide the Expert Visit Committee, particularly for certain categories in certain universities?
+      - Could you elaborate on the exemptions that the Expert Visit Committee enjoys when dealing with the addition of supernumerary seats, specifically for certain categories in certain universities?
+      - What are the exemptions for the Expert Visit Committee concerning the introduction of supernumerary seats for OCI/Foreign Nationals/Children of Indian Workers in the Gulf Countries in certain universities?
+      - In cases involving the introduction of supernumerary seats, what exemptions are granted to the Expert Visit Committee, especially for certain categories in specific universities?
+
+  - intent: ter_charges_applicable_approval_handbook
+    examples: |
+      - What charges are levied on universities under Technical Education Regulatory (TER) Charges, as specified in the Approval Process Handbook?
+      - Can you outline the charges that universities are required to pay under Technical Education Regulatory (TER) Charges, as indicated in the Approval Process Handbook?
+      - Regarding Technical Education Regulatory (TER) Charges, what financial obligations do universities have to fulfill according to the Approval Process Handbook?
+      - What are the applicable charges for universities under Technical Education Regulatory (TER) Charges, as outlined in the Approval Process Handbook?
+      - Could you provide details on the financial charges imposed on universities as part of Technical Education Regulatory (TER) Charges, as mentioned in the Approval Process Handbook?
+      - In terms of Technical Education Regulatory (TER) Charges, what specific charges are universities expected to bear according to the Approval Process Handbook?
+      - What is the fee structure for universities under Technical Education Regulatory (TER) Charges, as highlighted in the Approval Process Handbook?
+      - Can you elucidate on the charges associated with Technical Education Regulatory (TER) that universities are obligated to pay, as per the Approval Process Handbook?
+
+    - intent: extension_of_approval_processing_ratification
+    examples: |
+      - How are applications for Extension of Approval processed, and who ratifies the decisions in this regard?
+      - Can you explain the procedural steps involved in processing applications for the Extension of Approval, and who holds the authority to ratify the decisions?
+      - Regarding Extension of Approval, what is the process for handling applications, and who has the responsibility to endorse the decisions?
+      - Could you provide insights into the processing mechanism for applications seeking Extension of Approval and identify the authority responsible for ratifying decisions?
+      - In the context of Extension of Approval, what steps are taken to process applications, and which body is entrusted with ratifying the decisions?
+      - What is the standard procedure for processing applications related to the Extension of Approval, and who has the mandate to ratify the decisions?
+      - How are decisions on applications for Extension of Approval reached, and which authority ratifies these decisions?
+      - Can you outline the steps involved in handling applications for the Extension of Approval and specify the authority responsible for endorsing decisions?
+
+  - intent: graded_autonomy_eligible_universities_intake_increase
+    examples: |
+      - What criteria must universities meeting the eligibility for Graded Autonomy fulfill concerning the expansion of intake in Emerging/Multidisciplinary areas or the introduction of new Courses?
+      - Could you provide details on the conditions that universities eligible for Graded Autonomy must meet when seeking to increase intake in Emerging/Multidisciplinary areas or introduce new Courses?
+      - In terms of Graded Autonomy eligibility, what obligations do universities have regarding the augmentation of intake in Emerging/Multidisciplinary areas or the incorporation of new Courses?
+      - What specific requirements must universities, eligible for Graded Autonomy, adhere to when contemplating an increase in intake in Emerging/Multidisciplinary areas or the incorporation of new Courses?
+      - Can you elucidate on the prerequisites that universities meeting the criteria for Graded Autonomy need to fulfill concerning the expansion of intake in Emerging/Multidisciplinary areas or the addition of new Courses?
+      - Regarding Graded Autonomy eligibility, what are the stipulated requirements for universities looking to enhance intake in Emerging/Multidisciplinary areas or introduce new Courses?
+      - What conditions must universities, eligible for Graded Autonomy, meet when considering the augmentation of intake in Emerging/Multidisciplinary areas or the implementation of new Courses?
+      - Could you outline the specific requirements that universities, meeting the eligibility for Graded Autonomy, must satisfy concerning the increase in intake in Emerging/Multidisciplinary areas or the introduction of new Courses?
+
+  - intent: actions_in_complaints_norms_violation
+    examples: |
+      - In the event of reported norm violations, could you outline the specific steps and measures that will be taken to address and rectify the situation?
+      - What procedures are in place to handle complaints regarding the breach of norms, and what actions will be initiated to address such issues?
+      - Can you elaborate on the mechanisms and processes for dealing with complaints related to norm violations, including any investigative or corrective actions?
+      - How is the resolution of complaints about norm violations typically handled, and what measures are implemented to ensure accountability?
+      - What protocols and procedures are followed when complaints are received regarding the violation of norms, and how are these cases investigated and resolved?
+      - Could you provide details on the actions or sanctions that may be imposed in response to verified complaints about norm violations?
+      - In case of reported norm breaches, what specific steps will be taken to investigate, address, and prevent similar violations in the future?
+      - How does the institution respond to complaints alleging the violation of norms, and what measures are in place to ensure a fair and transparent resolution process?
+
+  - intent: conditions_not_granting_extension_of_approval
+    examples: |
+      - Under what circumstances is the request for Extension of Approval typically denied, and what factors contribute to such decisions?
+      - Can you outline the specific conditions or situations where Extension of Approval is generally not granted for institutions?
+      - What criteria or instances lead to the denial of Extension of Approval, and how are these determinations made?
+      - Are there specific scenarios or conditions in which institutions can expect their request for Extension of Approval to be refused?
+      - Could you provide insights into the circumstances that result in a rejection of Extension of Approval requests for institutions?
+      - What factors are taken into consideration that might lead to the non-approval of Extension requests for institutions?
+      - Can you clarify the conditions under which Extension of Approval is not granted and the rationale behind such decisions?
+      - What conditions or characteristics determine if a university is exempted from the annual approval process for Technical Programmes/Courses?
+
+  - intent: obtaining_extension_of_approval_letter
+    examples: |
+      - What is the procedure for institutions to acquire the Extension of Approval letter, and what steps need to be followed?
+      - Could you elaborate on the steps that institutions must take to secure the Extension of Approval letter?
+      - In what way can institutions formally obtain the Extension of Approval letter, and what is the application process?
+      - What are the requisite steps and protocols for institutions to receive the official Extension of Approval letter?
+      - Can you provide a detailed guide on the process institutions need to undertake to obtain the Extension of Approval letter?
+      - How do institutions go about securing the Extension of Approval letter, and what documentation is required in this process?
+      - Could you outline the specific actions or submissions that institutions must complete to obtain the Extension of Approval letter?
+      - Can you clarify the official channels and procedures that institutions are required to follow to obtain the Extension of Approval letter?
+
+  - intent: admission_eligibility_criteria
+    examples: |
+      - What factors are considered to determine the eligibility of students for admission to the institution?
+      - Could you explain the criteria that influence students' eligibility for admission to the programs?
+      - What are the specific standards or qualifications that play a role in assessing students' eligibility for admission?
+      - Can you elaborate on the criteria that institutions use to evaluate the eligibility of students applying for admission?
+      - What factors are taken into account to determine if students meet the eligibility requirements for admission?
+      - Could you provide details on the criteria that institutions use to ascertain the eligibility of prospective students for admission?
+      - What standards or parameters are considered when assessing the eligibility of students applying for admission to the institution?
+      - Can you provide details on the criteria that institutions use to ascertain the eligibility of prospective students for admission?
+
+  - intent: academic_calendar_requirement_universities
+    examples: |
+      - Could you outline the expectations and regulations related to the Academic Calendar that universities must adhere to?
+      - What specific obligations or guidelines exist regarding the Academic Calendar that universities are expected to follow?
+      - Can you provide details on the requirements stipulated for the Academic Calendar that universities need to fulfill?
+      - What are the mandatory elements or specifications concerning the Academic Calendar that universities are obliged to meet?
+      - Could you elaborate on the regulations or standards pertaining to the Academic Calendar that universities must observe?
+      - What are the prescribed criteria or obligations related to the Academic Calendar that universities are supposed to meet?
+      - Can you explain the expectations and norms associated with the Academic Calendar that universities are required to fulfill?
+      - What specific rules or criteria govern the Academic Calendar for all universities, and how should they comply?
+
+  - intent: student_enrollment_details_upload_deadline
+    examples: |
+      - What is the designated deadline for universities to upload student enrollment details on the AICTE Web-Portal?
+      - Can you specify the timeline within which universities are required to submit student enrollment details on the AICTE Web-Portal?
+      - When should universities ensure the completion of uploading student enrollment details on the AICTE Web-Portal?
+      - Could you clarify the timeframe universities have for the submission of student enrollment details on the AICTE Web-Portal?
+      - What is the cutoff date for universities to finalize and upload student enrollment details on the AICTE Web-Portal?
+      - Can you provide details on the deadline universities need to adhere to for uploading student enrollment information on the AICTE Web-Portal?
+      - By what date should universities complete the task of uploading student enrollment details on the AICTE Web-Portal?
+      - What is the prescribed schedule or timeframe for universities to accomplish the uploading of student enrollment details on the AICTE Web-Portal?
+
+  - intent: governing_bodies_constitution_private_state_private_university
+    examples: |
+      - What are the specified governing bodies that need to be constituted for Institution Deemed to be University (Private)/State Private University?
+      - Can you provide details on the governing bodies that are required to be established for Institution Deemed to be University (Private)/State Private University?
+      - What is the composition of the governing bodies mandated for Institution Deemed to be University (Private)/State Private University?
+      - Could you outline the governing bodies that institutions must form for Institution Deemed to be University (Private)/State Private University?
+      - What are the specific governing bodies that institutions are obligated to constitute for Institution Deemed to be University (Private)/State Private University?
+      - Can you elaborate on the governing bodies that institutions must organize for Institution Deemed to be University (Private)/State Private University?
+      - What governing bodies are outlined in the regulations for Institution Deemed to be University (Private)/State Private University?
+      - Could you specify the required governing bodies that institutions must establish for Institution Deemed to be University (Private)/State Private University?
+
+  - intent: measures_maintaining_high_standard_technical_education
+    examples: |
+      - How can universities ensure the maintenance of a high standard in Technical Education?
+      - What steps should universities take to uphold a high standard in Technical Education?
+      - Can you outline the strategies universities need to implement for maintaining high standards in Technical Education?
+      - What are the recommended measures for universities to adhere to in order to sustain a high standard in Technical Education?
+      - How should universities go about maintaining excellence in Technical Education?
+      - Could you provide guidance on the actions universities should adopt to keep a high standard in Technical Education?
+      - What specific measures are suggested for universities to maintain a high standard in Technical Education?
+      - In what ways can universities actively contribute to the maintenance of high standards in Technical Education?
+
+  - intent: universities_exempted_annual_approval_technical_programs
+    examples: |
+      - Are there specific universities exempted from the annual approval process for offering Technical Programmes/Courses?
+      - Can you identify the universities that do not need to undergo the annual approval process for Technical Programmes/Courses?
+      - Are there exceptions for certain universities regarding the annual approval process for offering Technical Programmes/Courses?
+      - Which universities are excluded from the requirement of annual approval for Technical Programmes/Courses?
+      - Can you specify the universities that enjoy exemption from the annual approval process for Technical Programmes/Courses?
+      - Are there specific criteria or types of universities that do not need to go through the annual approval process for Technical Programmes/Courses?
+      - Can you elaborate on the universities that are not subject to the annual approval process for offering Technical Programmes/Courses?
+      - What conditions or characteristics determine if a university is exempted from the annual approval process for Technical Programmes/Courses?
+
+  - intent: actions_unapproved_technical_program_running
+    examples: |
+      - What consequences are in place if a technical program is discovered operating without prior approval?
+      - Can you outline the actions that will be taken if a technical program is identified as running without prior approval?
+      - In the event of a technical program operating without prior approval, what measures will be implemented?
+      - What steps are specified to address the situation when a technical program is running without prior approval?
+      - What is the course of action when it is determined that a technical program is running without obtaining prior approval?
+      - Can you elucidate the procedures or penalties applicable if a technical program is running without obtaining approval?
+      - How is non-compliance with the requirement of prior approval for a technical program addressed?
+      - What measures are prescribed for dealing with instances where a technical program is detected running without obtaining prior approval?
+
+  - intent: scrutiny_re_scrutiny_conducting_process
+    examples: |
+      - What is the prescribed procedure for conducting Scrutiny/Re-Scrutiny?
+      - Can you explain the standard process for carrying out Scrutiny/Re-Scrutiny?
+      - How is Scrutiny/Re-Scrutiny supposed to be conducted according to the regulations?
+      - What are the established guidelines for the execution of Scrutiny/Re-Scrutiny?
+      - Could you provide details on how the process of Scrutiny/Re-Scrutiny is conducted?
+      - Can you elaborate on the steps involved in conducting Scrutiny/Re-Scrutiny?
+      - What is the proper protocol for handling Scrutiny/Re-Scrutiny as per the guidelines?
+      - How is the conduction of Scrutiny/Re-Scrutiny outlined in the relevant regulations?
