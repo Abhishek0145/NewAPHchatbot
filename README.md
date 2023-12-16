@@ -27,6 +27,6 @@ For the best experience, we recommend trying out the chatbot in a Github Codespa
 
 ## Author
 
-### Abhishek Sharma  Email: abhisheksharmaa1404@gmail.com
+### Abhishek Sharma,  Email: abhisheksharmaa1404@gmail.com
 Feel free to reach out for any further inquiries or assistance!
 
